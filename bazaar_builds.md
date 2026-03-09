@@ -236,6 +236,8 @@
 
 ### 🐞 瓢虫暴击流（Pillbuggy）
 
+> Pillbuggy is a flexible win condition with huge one-shot potential. Pair it with enough Haste triggers, Crit Chance, and/or Multicast support, and it'll quickly scale well beyond the enemy's Max Health. There's lots of playable variants, including Radar Dome, Launch Tower, Stelle's Workshop, and more.
+
 **阵容 1** 🥇 10连胜 · rrsseeaann
 > 纸风车 | 降落伞 | 喷气背包 | 西瓜虫车 | 定向无人机 | 风速仪 | 纸飞机
 > [查看详情](https://bazaardb.gg/run/f62e8854-b6ea-47c3-9500-1991e8979e2e)
@@ -267,6 +269,9 @@
 
 ### 🍊 水果榨汁流（Fruit Press）
 
+> Fruit Press utilizes spammy low Cooldown Food to scale up its Damage, then crushes them down to ramp up exponentially. It's Jules' very own LavaRoller in a sense, except it heats up in its own unique way. Aim to pickup some base Damage skills to help kickstart its doubling capabilities.
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/fruit-press-jules-kripp)
+
 **阵容 1** 🥇 10连胜 · (Anonymous)
 > 鱼子酱 | 绵鳚 | 巨龙肉排 | 黑胡椒 | 咖啡 | 辣酱 | 调料架 | 方便面
 > [查看详情](https://bazaardb.gg/run/99ece585-bd60-4628-b110-d0c37ea674d2)
@@ -284,6 +289,9 @@
 
 ### 🧊 冷冻流（Freezer）
 
+> Freeze can be oppressively strong, but does have a bit of whacky positioning issues depending on where the Coolers spawn. However, once assembled, it can effectively lock down opposing boards while dealing a ton of Damage. Pastry Cart and Blender are both great choices.
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/freeze-jules-kripp)
+
 **阵容 1** 🥇 10连胜 · TimesReyn
 > 天外来蒜 | 黄油 | 辣酱 | 调料架 | 巨型棒棒糖 | 电池 | 咖啡
 > [查看详情](https://bazaardb.gg/run/cb503249-f227-4b9f-bb71-5a4efa85e09e)
@@ -299,6 +307,9 @@
 - **咖啡** 🟦小：加速此物品左侧的物品1/2/3/4秒
 
 ### 🍭 巨型棒棒糖流（Giant Lollipop）
+
+> Giant Lollipop is a fast and hard-hitting build with solid speed control, thanks to its innate multi-Slow effect. Scale its Damage with items like Dishwasher and/or Cutting Board, or utilize skills like Slow and Steady. It can slot onto multiple boards, so make the most of what you get.
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/giant-lollipop-jules-kripp)
 
 **阵容 1** 🥇 10连胜 · Malegrande
 > 洗碗机 | 船舵 | 巨型棒棒糖 | 逞威风腰带扣
@@ -317,6 +328,8 @@
 ## 麦克（Mak）
 
 ### 🌸 罂粟田武器流（Poppy Field）
+
+> Poppy Field is a powerful payoff to an aggressive Weapon setup, providing incredible speed and scaling. You can play for tempo with a wide board of Small items, or transition towards a one-shot build with Goop Flail or Plague Glaive.
 
 **阵容 1** 🥇 10连胜 · LGU
 > 能量药水 | 炼金炉 | 霜冻药水 | 沙漏 | 冰爪 | 大气采样仪
@@ -346,6 +359,8 @@
 - **冰锥** 🟦小：〔被动〕每场战斗开始时，冻结一件物品3/4/5/6秒。
 
 ### ⚡ 符文刃一击流（Runic Blade）
+
+> Runic Blade is a deadly one-shot build that will destroy anything that can't win before it. It's often assembled off the back of Magic Carpet, so if you're unable to get the tempo win, there's still a viable path for the late game. Icicle + Invigorating Cold is a great way to kickstart the build.
 
 **阵容 1** 🥇 10连胜 · LGU
 > 实验室 | 能量药水 | 沸腾烧瓶 | 腐蚀溶剂 | 大气采样仪 | 冰锥
@@ -389,6 +404,9 @@
 
 ### 🔫 全弹速攻流（Full Ammo Aggro）
 
+> A Full Ammo setup is definitely viable as long as you pickup some Damage and/or Ammo skills. It packs incredibly fast burst that can take out its foes before they even get started. Post Orange Julian nerfs, it's generally the faster and more reliable option compared to the previous combo-centric builds. * [Gunslinger Aggro Vanessa
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/gunslinger-aggro-vanessa)
+
 **阵容 1** 🥇 10连胜 · prefer2s1eep
 > 定制准镜 | 潜艇 | 潜水头盔 | 深潜器 | 潜水配重
 > [查看详情](https://bazaardb.gg/run/b2233987-7a68-47ff-a5d2-4158a991976c)
@@ -407,6 +425,9 @@
 ## 杜利（Duli）
 
 ### ❄️ 冰冻9000流（Ice 9000）
+
+> Ice 9000 is a powerful payoff that scales off of the strongest disruption in the game, Freeze. Launcher Core is one of the best ways to Charge and loop the board, but you can always play a Friends setup with Companion Core + Pierre Conditioner . * [Launcher Core Dooley
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/launcher-core-dooley-kripp)
 
 **阵容 1** 🏆 10连胜 · littlemonk
 > 暴击核心 | 贝塔射线 | 冲锋枪 | 冷却风扇 | 主板 | 冰爪 | 定向无人机
@@ -441,6 +462,9 @@
 
 ### 🛡️ 甲虫护盾流（Harmadillo）
 
+> Harmadillo is back with the recent revert to Duct Tape. It's a fast looping build that takes full advantage of spammy Shield triggers, then weaponizes it into ridiculous Damage. Shielded enchants allow Bunker to shine, but there are several other iterations, including a Dino variant with Tanky Anky!
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/harmadillo-dooley)
+
 **阵容 1** 🥇 10连胜 · naswing
 > 多尔王主机 | 铁甲犰狳 | 尖刺铁丝网 | 氮气罐 | 装甲核心 | 布胶带 | 冲锋枪
 > [查看详情](https://bazaardb.gg/run/1042efad-88ed-43b0-8a10-8d369dd6dda4)
@@ -466,6 +490,9 @@
 - **多尔王** 🟥大：造成1000/2000伤害 ／ 〔被动〕触发加速、减速、剧毒、冻结或灼烧时，为此物品充能1/2秒。 ／ 〔被动〕使用伙伴时，获得50/100护盾。
 
 ### 🤖 杜尔特隆流（Dooltron）
+
+> Dooltron is an absolute powerhouse due to its flexibility and raw numbers. There are a wide variety of efficient engines, often taking advantage of contextual enchanted setups , or Cooldown reduced Haste spam with items like Monitor Lizard. * [Companion Core Dooley
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/companion-core-dooley-kripp)
 
 **阵容 1** 🥇 10连胜 · (Anonymous)
 > 急救艾登 | 迷幻蝠鲼 | RED F1R3FLY | 光纤 | 机器人工厂 | 推土比尔
@@ -496,6 +523,9 @@
 
 ### 🦯 歹徒流（Crook）
 
+> Crook is the classic beatdown archetype that takes advantage of high base Damage to snowball early wins. As of Season 11, Crook is now a Bronze-tier item, making it an even more consistent strategy than before.
+> 📖 [详细攻略指南](https://mobalytics.gg/the-bazaar/builds/square-pygmalien-kripp)
+
 **阵容 1** 🥇 10连胜 · IsaacFTW
 > 双头巨锤 | 狮首手杖 | 猪疗膏 | 陷阱装置 | 腰带
 > [查看详情](https://bazaardb.gg/run/ccfc2fdb-1c4e-440a-8b8b-1e322c5bde33)
@@ -514,6 +544,8 @@
 - **留声机** 🟧中：〔被动〕此物品左侧物品的冷却时间缩短20/35%。
 
 ### 👖 货物短裤流（Cargo Shorts）
+
+> Cargo Shorts enables a huge variety of combo builds, all off the back of its absurd Multicast. It's the perfect balance of offense and defense scaling, as it can take advantage of items like 28 Hour Fitness and PiggleStorm Gaming House, or utilize extra Charge spam with Textiles or Piggles Board.
 
 **阵容 1** 🥇 10连胜 · Tenchi
 > 小圆猪板 | 月光宝珠 | 工装短裤 | Yo Yo | 蒸汽汤勺 | 霜绝祭坛

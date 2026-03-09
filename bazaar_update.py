@@ -423,8 +423,8 @@ def get_meta_desc(genre_label, hero):
     if meta_hero not in meta:
         return None, None
 
-    # 从 genre_label 里提取括号内英文名
-    m = re.search(r'\(([^）\)]+)\)\s*$', genre_label)
+    # 从 genre_label 里提取括号内英文名（支持全角/半角括号）
+    m = re.search(r'[（(]([^）)]+)[）)]\s*$', genre_label)
     if not m:
         return None, None
     en_name = m.group(1).strip()
