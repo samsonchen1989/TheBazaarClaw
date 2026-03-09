@@ -1110,5 +1110,330 @@
       "Nitro"
     ],
     "fetched_at": "2026-03-09T09:40:37.288608+00:00"
+  },
+  {
+    "run_id": "68490b2f-ef23-4196-9992-60312c41a917",
+    "player": "Exo",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Great Eagle",
+      "Bear Mask",
+      "Outlands Terror",
+      "Wolf Mask"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656072+00:00"
+  },
+  {
+    "run_id": "c8b91420-1116-4c2e-b624-dd4096c33254",
+    "player": "Jota",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Adrenaline Shot",
+      "Outlands Terror",
+      "Snow Wisp",
+      "Tree Club",
+      "Waterskin"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656169+00:00"
+  },
+  {
+    "run_id": "d29b5555-03e3-4467-9ae2-ea4602ec5f42",
+    "player": "chobot",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Messenger Sparrow",
+      "Great Eagle",
+      "Hunting Hawk",
+      "Sky Anchor",
+      "Airplane Glue",
+      "Wrench",
+      "Weather Machine",
+      "Stelle's Workshop"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656267+00:00"
+  },
+  {
+    "run_id": "873e7d90-e1cc-4f74-89d0-31b5a0a94c46",
+    "player": "ChesterHHh",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Aurora Vista",
+      "Hunter's Sled",
+      "Waterskin",
+      "Torch",
+      "Pressure Heater",
+      "Tinderbox"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656326+00:00"
+  },
+  {
+    "run_id": "15e4546e-5825-42c3-9b36-bcfcb3f935f7",
+    "player": "Pungfarmer",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Recycling Bin",
+      "Flying Potion",
+      "Show Globe",
+      "Infinite Potion",
+      "Flying Potion",
+      "Frost Potion",
+      "Drowsdrop",
+      "Infinite Potion"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656384+00:00"
+  },
+  {
+    "run_id": "bdb6bc42-7d34-4634-83f4-1f901a4be4b8",
+    "player": "dreamqwq",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Caviar",
+      "Instant Noodles",
+      "Freezer",
+      "Basket",
+      "Zarlic",
+      "Serving Platter"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656448+00:00"
+  },
+  {
+    "run_id": "e4169e39-5886-47b8-aac8-5a3fe970439a",
+    "player": "PandaTyrant",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Stretch Pants",
+      "Wild Boar",
+      "Waterskin",
+      "Hunter's Journal",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656500+00:00"
+  },
+  {
+    "run_id": "82405c60-d45e-4a78-8d0f-badede723650",
+    "player": "Noxar",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Black Mamba",
+      "BLU B33TL3",
+      "Frog Hollow",
+      "Tinderbox",
+      "Flying Squirrel",
+      "Snow Wisp",
+      "Firefly Lantern",
+      "Dryad"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656556+00:00"
+  },
+  {
+    "run_id": "279294c3-a3c7-4cd0-a97d-0e16e905090a",
+    "player": "Ugin",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Ornithopter",
+      "Hang Glider",
+      "Airplane Glue",
+      "Marshalling Lights",
+      "Clockwork Disc",
+      "Rocket Drone",
+      "Gyro Gunsight",
+      "Headset"
+    ],
+    "fetched_at": "2026-03-09T10:04:05.656615+00:00"
+  },
+  {
+    "run_id": "3581c8c7-e3ea-45ab-b8ff-61ebc2c6705b",
+    "player": "endoxty",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Honey Badger",
+      "Warpaint",
+      "Great Eagle"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.947996+00:00"
+  },
+  {
+    "run_id": "ab7e261a-2919-48d3-b586-fa84f492070c",
+    "player": "Hzoj",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Tortuga",
+      "Hunter's Journal",
+      "Firefly Lantern",
+      "Meat",
+      "Snow Wisp",
+      "Snow Wisp",
+      "Dryad"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948108+00:00"
+  },
+  {
+    "run_id": "a0d4352e-0c77-43b8-9b6c-6028c8712b5f",
+    "player": "IsaacFTW",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Double Whammy",
+      "Gramophone",
+      "Belt",
+      "Pawn Shop"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948165+00:00"
+  },
+  {
+    "run_id": "dde3d801-184f-45ec-a91b-48a3c858254c",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Wild Bear",
+      "Hidden Lake",
+      "Bagpipes",
+      "Waterskin",
+      "Orly"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948230+00:00"
+  },
+  {
+    "run_id": "89ef1617-8239-41ee-a880-cf04b28aadc0",
+    "player": "dreamqwq",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Basket",
+      "Freezer",
+      "Butter",
+      "Stopwatch",
+      "Pantry"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948293+00:00"
+  },
+  {
+    "run_id": "3d3d39aa-c94d-4471-81bf-5353f803bf5d",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Great Eagle",
+      "Messenger Sparrow",
+      "Flying Squirrel",
+      "Anaconda",
+      "Honey Badger"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948407+00:00"
+  },
+  {
+    "run_id": "256b6a93-378f-42c0-b41f-3fbcb23eb799",
+    "player": "akwib",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Crane",
+      "Sirens",
+      "Radar Dome",
+      "Flycycle",
+      "Headset"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948459+00:00"
+  },
+  {
+    "run_id": "60b0a116-579c-4d01-8a1e-13187f6c4412",
+    "player": "Noxar",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Micro Mach",
+      "Incendiary Rounds",
+      "Matchbox",
+      "Bandages",
+      "Succulents",
+      "Tea Set",
+      "Hogwash"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948580+00:00"
+  },
+  {
+    "run_id": "9699c297-637f-4201-9968-ee45bd7e6e6b",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Eagle Sigil",
+      "Great Eagle",
+      "Messenger Sparrow",
+      "Adrenaline Shot"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948630+00:00"
+  },
+  {
+    "run_id": "8fc2b005-f883-4741-a530-3cfa67fad45b",
+    "player": "dolly",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Potion",
+      "Boiling Flask",
+      "Caustic Solvent",
+      "Scales",
+      "Caustic Solvent",
+      "Spider Fern",
+      "Caustic Solvent"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948691+00:00"
+  },
+  {
+    "run_id": "2f69f7c4-e197-4797-be78-3755362498d6",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fairy Circle",
+      "Fogshroom",
+      "Dragon Whelp",
+      "Worry Wart",
+      "Dragon Heart",
+      "Chains"
+    ],
+    "fetched_at": "2026-03-09T10:40:14.948925+00:00"
   }
 ]

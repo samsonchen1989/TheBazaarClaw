@@ -305,141 +305,90 @@ def cluster_runs_by_hero(runs_dict):
 
     return result
 
-def load_meta_builds():
-    """加载 mobalytics meta builds 数据，返回 {hero: [{build_name, key_cards, description_en, guide_slugs}]}"""
-    meta_path = os.path.join(WORKSPACE, "mobalytics_meta_builds.json")
-    if not os.path.exists(meta_path):
-        return {}
-    with open(meta_path) as f:
-        builds = json.load(f)
-    by_hero = defaultdict(list)
-    for b in builds:
-        by_hero[b["hero"]].append(b)
-    return dict(by_hero)
-
-# 加载 meta builds（模块级缓存）
-META_BUILDS = {}
-
-def _get_meta_builds():
-    global META_BUILDS
-    if not META_BUILDS:
-        META_BUILDS = load_meta_builds()
-    return META_BUILDS
-
-# mobalytics 流派名 → 中文显示名 + emoji
-META_LABEL_CN = {
-    # Vanessa
-    "Full Ammo Aggro":   ("🔫", "全弹速攻流（Full Ammo Aggro）"),
-    "Anchor":            ("⚓", "船锚流（Anchor）"),
-    "Slow Burn":         ("🔥", "缓灼流（Slow Burn）"),
-    # Pygmalien
-    "Cargo Shorts":      ("👖", "货物短裤流（Cargo Shorts）"),
-    "Landscraper":       ("🌿", "园丁护盾流（Landscraper）"),
-    "Crook":             ("🦯", "歹徒流（Crook）"),
-    # Dooley
-    "Harmadillo":        ("🛡️", "甲虫护盾流（Harmadillo）"),
-    "Dooltron":          ("🤖", "杜尔特隆流（Dooltron）"),
-    "Ice 9000":          ("❄️", "冰冻9000流（Ice 9000）"),
-    # Mak
-    "Poppy Field":       ("🌸", "罂粟田武器流（Poppy Field）"),
-    "Idol of Decay":     ("☠️", "腐朽神像毒流（Idol of Decay）"),
-    "Runic Blade":       ("⚡", "符文刃一击流（Runic Blade）"),
-    # Stelle
-    "LavaRoller":        ("🌋", "熔岩滚车灼烧流（LavaRoller）"),
-    "Self-Destroy":      ("💥", "自毁炸弹流（Self-Destroy）"),
-    "Pillbuggy":         ("🐞", "瓢虫暴击流（Pillbuggy）"),
-    # Jules
-    "Freezer":           ("🧊", "冷冻流（Freezer）"),
-    "Giant Lollipop":    ("🍭", "巨型棒棒糖流（Giant Lollipop）"),
-    "Fruit Press":       ("🍊", "水果榨汁流（Fruit Press）"),
-    # Karnok（自定义）
-    "Flying Squirrel Beast": ("🐿️🐾", "飞松鼠·野兽流（Flying Squirrel Beast）"),
-    "Flying Squirrel Sword": ("⚔️",   "飞松鼠·剑流（Flying Squirrel Sword）"),
-    "Flying Squirrel":       ("🐿️",   "飞松鼠流（Flying Squirrel）"),
-    "Bird of Prey":          ("🦅",   "猛禽流（Bird of Prey）"),
-    "Fire Nature":           ("🔥🌿", "烈焰·自然流（Fire Nature）"),
-    "Beast":                 ("🐗",   "野兽流（Beast）"),
-    "Hybrid":                ("🎲",   "混搭流（Hybrid）"),
-}
-
 def auto_label(items, hero):
     """
-    基于 mobalytics meta builds 数据匹配流派，优先精确匹配核心卡牌。
-    数据来源：mobalytics_meta_builds.json（从 mobalytics.gg/the-bazaar/guides/meta-builds 抓取）
+    根据物品组合自动命名流派。
+    命名规则：核心卡牌 + 英雄专属风格，全部自定义。
     """
     s = {i.lower() for i in items}
-    meta = _get_meta_builds()
 
-    # 先尝试从 mobalytics 数据匹配
-    hero_map = {"Duli": "Dooley", "Pygmalion": "Pygmalien"}
-    meta_hero = hero_map.get(hero, hero)
-
-    if meta_hero in meta:
-        best_match = None
-        best_score = 0
-        for b in meta[meta_hero]:
-            key_cards_lower = {c.lower() for c in b.get("key_cards", [])}
-            if not key_cards_lower:
-                continue
-            score = len(s & key_cards_lower)
-            if score > best_score:
-                best_score = score
-                best_match = b
-        if best_match and best_score >= 1:
-            bn = best_match["build_name"]
-            emoji, label = META_LABEL_CN.get(bn, ("🎮", f"{bn}"))
-            return f"{emoji} {label}"
-
-    # Karnok 没有 mobalytics 条目，用自定义规则
     if hero == "Karnok":
         if "flying squirrel" in s:
             if "runic claymore" in s:
-                e, l = META_LABEL_CN["Flying Squirrel Sword"]
-                return f"{e} {l}"
+                return "⚔️ 飞松鼠·剑流"
             if any(x in s for x in ["honey badger", "beast tooth", "outlands terror", "tree club"]):
-                e, l = META_LABEL_CN["Flying Squirrel Beast"]
-                return f"{e} {l}"
-            e, l = META_LABEL_CN["Flying Squirrel"]
-            return f"{e} {l}"
+                return "🐿️🐾 飞松鼠·野兽流"
+            if any(x in s for x in ["langxian", "wand", "spirit diffuser"]):
+                return "🐿️✨ 飞松鼠·秘术流"
+            return "🐿️ 飞松鼠流"
         if any(x in s for x in ["great eagle", "hunting hawk", "messenger sparrow", "trebuchet"]):
-            e, l = META_LABEL_CN["Bird of Prey"]
-            return f"{e} {l}"
+            return "🦅 猛禽流"
         if any(x in s for x in ["dryad", "tinderbox", "warpaint", "signal fire", "torch", "firefly lantern"]):
-            e, l = META_LABEL_CN["Fire Nature"]
-            return f"{e} {l}"
+            return "🔥🌿 烈焰·自然流"
         if any(x in s for x in ["wild boar", "boar mask", "honey badger", "beast tooth", "karst"]):
-            e, l = META_LABEL_CN["Beast"]
-            return f"{e} {l}"
+            return "🐗 野兽流"
+        if any(x in s for x in ["waystones", "aurora vista", "hidden lake", "trail markers"]):
+            return "🗺️ 探险流"
 
-    e, l = META_LABEL_CN["Hybrid"]
-    return f"{e} {l}"
+    elif hero == "Stelle":
+        if any(x in s for x in ["lavaroller"]):
+            return "🌋 熔岩滚车流"
+        if any(x in s for x in ["the big one", "repair drone", "parts picker"]):
+            return "💥 自毁炸弹流"
+        if any(x in s for x in ["pillbuggy", "radar dome"]):
+            return "🐞 瓢虫流"
+        if any(x in s for x in ["jetpack", "ornithopter", "levitation pad"]):
+            return "🚀 飞行流"
+        if any(x in s for x in ["ray gun", "alpha ray", "beta ray"]):
+            return "🔫 射线流"
 
-def get_meta_desc(genre_label, hero):
-    """根据流派标签和英雄，从 mobalytics 数据获取流派描述和攻略链接"""
-    meta = _get_meta_builds()
-    hero_map = {"Duli": "Dooley", "Pygmalion": "Pygmalien"}
-    meta_hero = hero_map.get(hero, hero)
+    elif hero == "Jules":
+        if any(x in s for x in ["giant lollipop"]):
+            return "🍭 巨型棒棒糖流"
+        if any(x in s for x in ["walk-in freezer", "sorbet", "slushee"]):
+            return "🧊 冷冻流"
+        if any(x in s for x in ["fruit press"]):
+            return "🍊 水果榨汁流"
 
-    if meta_hero not in meta:
-        return None, None
+    elif hero == "Mak":
+        if any(x in s for x in ["runic blade", "runic great axe", "runic daggers"]):
+            return "⚡ 符文刃流"
+        if any(x in s for x in ["idol of decay", "pendulum"]):
+            return "☠️ 腐朽神像毒流"
+        if any(x in s for x in ["poppy field", "goop flail"]):
+            return "🌸 罂粟田流"
+        if any(x in s for x in ["atmospheric sampler", "boiling flask"]):
+            return "🧪 炼金流"
 
-    # 从 genre_label 里提取括号内英文名（支持全角/半角括号）
-    m = re.search(r'[（(]([^）)]+)[）)]\s*$', genre_label)
-    if not m:
-        return None, None
-    en_name = m.group(1).strip()
+    elif hero == "Duli":
+        if any(x in s for x in ["harmadillo", "bunker"]):
+            return "🛡️ 甲虫护盾流"
+        if any(x in s for x in ["dooltron"]):
+            return "🤖 杜尔特隆流"
+        if any(x in s for x in ["ice 9000", "cooling fan", "fiber optics"]):
+            return "❄️ 冰冻9000流"
+        if any(x in s for x in ["dinosawer", "trollosaur", "momma-saur", "tanky anky"]):
+            return "🦕 恐龙流"
 
-    for b in meta[meta_hero]:
-        # 精确匹配：build_name 与提取的英文名一致
-        if b["build_name"].lower() == en_name.lower():
-            desc = b.get("description_en", "")
-            # 清理 Note 前缀和操作提示
-            desc = re.sub(r'^\*Note:.*?\*\s*', '', desc).strip()
-            desc = re.sub(r'Press space again.*', '', desc).strip()
-            slugs = b.get("guide_slugs", [])
-            guide_url = f"https://mobalytics.gg/the-bazaar/builds/{slugs[0]}" if slugs else None
-            return (desc if desc else None), guide_url
-    return None, None
+    elif hero == "Vanessa":
+        if any(x in s for x in ["anchor", "rowboat"]):
+            return "⚓ 船锚流"
+        if any(x in s for x in ["oni mask", "incendiary rounds"]):
+            return "🔥 缓灼流"
+        if any(x in s for x in ["figurehead", "grapeshot", "pistol sword"]):
+            return "🔫 全弹速攻流"
+        if any(x in s for x in ["pufferfish", "tortuga", "diving helmet"]):
+            return "🐡 海洋毒刺流"
+
+    elif hero == "Pygmalion":
+        if any(x in s for x in ["landscraper"]):
+            return "🌿 园丁护盾流"
+        if any(x in s for x in ["cargo shorts"]):
+            return "👖 货物短裤流"
+        if any(x in s for x in ["crook", "lion cane"]):
+            return "🦯 歹徒流"
+
+    return "🎲 混搭流"
 
 
 def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
@@ -449,8 +398,7 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
     lines.append(f"\n> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：{now}")
     lines.append(f"> 累计收录对局：{total_runs} 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）")
     lines.append("> 每英雄最多 5 种流派，每流派最多 5 套阵容")
-    lines.append("> **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库")
-    lines.append("> **流派解析**：来源 [Mobalytics Meta Builds](https://mobalytics.gg/the-bazaar/guides/meta-builds)\n")
+    lines.append("> **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库\n")
 
     hero_order = ["Karnok", "Stelle", "Jules", "Mak", "Vanessa", "Duli", "Pygmalion"]
     for hero in hero_order:
@@ -465,15 +413,6 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
 
         for genre_label, genre_runs in clusters:
             lines.append(f"### {genre_label}\n")
-
-            # 加入 mobalytics 流派描述
-            meta_desc, guide_url = get_meta_desc(genre_label, hero)
-            if meta_desc:
-                lines.append(f"> {meta_desc}")
-                if guide_url:
-                    lines.append(f"> 📖 [详细攻略指南]({guide_url})\n")
-                else:
-                    lines.append("")
 
             for idx, r in enumerate(genre_runs, 1):
                 vmark = "🏆" if r["victory"] == "Perfect" else "🥇"
@@ -503,6 +442,7 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
             lines.append("")
 
     return "\n".join(lines)
+
 
 # ──────────────────────────────
 # 主流程
