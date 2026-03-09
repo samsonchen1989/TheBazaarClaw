@@ -464,9 +464,19 @@ def push_to_github(added: int):
         src = os.path.join(WORKSPACE, fname)
         if os.path.exists(src):
             shutil.copy2(src, REPO_DIR)
+    # 数据库文件
+    for src_path, fname in [
+        ("/tmp/items_db.json",                      "items_db.json"),
+        (os.path.join(WORKSPACE, "skills_db.json"), "skills_db.json"),
+    ]:
+        if os.path.exists(src_path):
+            shutil.copy2(src_path, os.path.join(REPO_DIR, fname))
 
-    # 提交并推送
-    subprocess.run(["git", "add", "bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py"], cwd=REPO_DIR, capture_output=True)
+    subprocess.run(
+        ["git", "add", "bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py",
+         "items_db.json", "skills_db.json"],
+        cwd=REPO_DIR, capture_output=True
+    )
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
     commit_msg = f"自动更新：{now_str}，新增 {added} 条对局"
     r = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, capture_output=True, text=True)
@@ -480,5 +490,18 @@ def push_to_github(added: int):
         print(f"  GitHub: 推送失败 {r2.stderr[:200]}")
 
 if __name__ == "__main__":
-    added, total = main()
-    push_to_github(added)
+    import argparse
+    parser = argparse.ArgumentParser(description="大巴扎构筑攻略更新工具")
+    parser.add_argument("--fetch", action="store_true", help="抓取新对局并更新攻略文档")
+    parser.add_argument("--push",  action="store_true", help="将本地数据推送到 GitHub")
+    args = parser.parse_args()
+
+    if args.fetch:
+        main()
+    elif args.push:
+        # push 模式：只做 GitHub 同步，不抓取（items_db/skills_db 会在 push_to_github 里一起复制）
+        push_to_github(added=0)
+    else:
+        # 默认：两件都做（向后兼容）
+        added, _ = main()
+        push_to_github(added)

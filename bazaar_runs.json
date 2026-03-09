@@ -346,5 +346,22 @@
       "Targeting Drone"
     ],
     "fetched_at": "2026-03-09T07:07:22.459908+00:00"
+  },
+  {
+    "run_id": "5aa7b322-26ee-49ad-94bf-bbbb23165161",
+    "player": "(Anonymous)",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "First Aiden",
+      "IllusoRay",
+      "RED F1R3FLY",
+      "Fiber Optics",
+      "Robotic Factory",
+      "Bill Dozer",
+      "Right Handed"
+    ],
+    "fetched_at": "2026-03-09T07:10:29.588669+00:00"
   }
 ]
