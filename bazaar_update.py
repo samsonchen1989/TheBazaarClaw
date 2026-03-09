@@ -273,8 +273,8 @@ HERO_CN = {
 
 def cluster_runs_by_hero(runs_dict):
     """
-    对每个英雄，按核心卡牌相似度聚类，取最多5个流派，每流派5套阵容
-    相似度：两套阵容共享核心卡牌数 / 联合集大小 (Jaccard)
+    对每个英雄，先用 auto_label 分流派，同流派合并（最多5场），
+    最多取5个流派，每流派按胜场降序排列。
     """
     by_hero = defaultdict(list)
     for r in runs_dict.values():
@@ -282,77 +282,106 @@ def cluster_runs_by_hero(runs_dict):
 
     result = {}
     for hero, hero_runs in by_hero.items():
-        # 按胜场降序，Perfect > Gold
+        # 按 Perfect > Gold，胜场降序
         hero_runs.sort(key=lambda r: (
             0 if r["victory"] == "Perfect" else 1,
             -r.get("wins", 0)
         ))
 
-        clusters = []  # list of (label, [runs])
-
+        # 按 auto_label 分组
+        label_map = defaultdict(list)  # label -> [runs]
         for run in hero_runs:
-            s = set(run["items"])
-            best_cluster = None
-            best_jaccard = 0.0
-            for i, (_, c_runs) in enumerate(clusters):
-                c_core = set(c_runs[0]["items"])
-                jaccard = len(s & c_core) / len(s | c_core)
-                if jaccard > best_jaccard:
-                    best_jaccard = jaccard
-                    best_cluster = i
+            label = auto_label(run["items"], hero)
+            if len(label_map[label]) < 5:
+                label_map[label].append(run)
 
-            if best_cluster is not None and best_jaccard >= 0.3:
-                if len(clusters[best_cluster][1]) < 5:
-                    clusters[best_cluster][1].append(run)
-            else:
-                if len(clusters) < 5:
-                    # 自动生成流派标签
-                    label = auto_label(run["items"], hero)
-                    clusters.append((label, [run]))
+        # 按第一条对局的胜场排序流派，取前5个
+        sorted_labels = sorted(
+            label_map.items(),
+            key=lambda kv: -(kv[1][0].get("wins", 0) if kv[1] else 0)
+        )[:5]
 
-        result[hero] = clusters
+        result[hero] = sorted_labels
 
     return result
 
 def auto_label(items, hero):
-    """根据物品组合自动命名流派"""
+    """
+    根据物品组合自动命名流派。
+    命名规则参考 mobalytics.gg/the-bazaar/builds：核心卡牌 + 英雄名。
+    """
     s = {i.lower() for i in items}
 
     if hero == "Karnok":
-        if any(x in s for x in ["flying squirrel", "great eagle", "hunting hawk", "messenger sparrow"]):
-            if any(x in s for x in ["beast call", "wild bear"]):
-                return "🦅🐻 飞鸟·野兽混合流"
+        # 飞行系：Flying Squirrel 为核心
+        if "flying squirrel" in s:
             if any(x in s for x in ["runic claymore"]):
-                return "🦅⚔️ 飞鸟·剑流"
-            return "🦅 飞鸟流"
-        if any(x in s for x in ["karst", "wild boar", "harmadillo", "meat", "stretch pants"]):
-            return "🐗 野兽流"
-        if any(x in s for x in ["dryad", "signal fire", "warpaint", "tinderbox"]):
-            return "🔥 烈焰·自然流"
-        if any(x in s for x in ["spiked collar", "anaconda", "bat", "eagle sigil", "vengeful sigil"]):
-            return "🐍 毒刺流"
-        if any(x in s for x in ["wild bear", "beast call"]):
-            return "🐻 野兽流"
+                return "⚔️ 飞松鼠·剑流（Flying Squirrel Sword）"
+            if any(x in s for x in ["honey badger", "beast tooth", "outlands terror", "tree club"]):
+                return "🐿️🐾 飞松鼠·野兽流（Flying Squirrel Beast）"
+            if any(x in s for x in ["langxian", "wand", "spirit diffuser"]):
+                return "🐿️✨ 飞松鼠·秘术流（Flying Squirrel Arcane）"
+            return "🐿️ 飞松鼠流（Flying Squirrel）"
+        # 猛禽系：以鸟类单位为核心，无飞松鼠
+        if any(x in s for x in ["great eagle", "hunting hawk", "messenger sparrow", "trebuchet"]):
+            return "🦅 猛禽流（Bird of Prey）"
+        # 野兽系
+        if any(x in s for x in ["wild boar", "boar mask", "honey badger", "beast tooth", "karst"]):
+            if any(x in s for x in ["karst", "warpaint", "dryad", "tinderbox"]):
+                return "🔥🌿 烈焰·自然流（Fire Nature）"
+            return "🐗 野兽流（Beast）"
+        # 自然·烈焰系
+        if any(x in s for x in ["dryad", "tinderbox", "warpaint", "signal fire", "torch", "firefly lantern"]):
+            return "🔥 烈焰·自然流（Fire Nature）"
+        # 石刃·地形系
+        if any(x in s for x in ["waystones", "aurora vista", "hidden lake", "trail markers"]):
+            return "🗺️ 地形·探险流（Waystone Explorer）"
 
     elif hero == "Stelle":
-        if any(x in s for x in ["ornithopter", "vortex cannon", "observatory", "radar dome"]):
-            return "🚁 科技·飞行流"
-        if any(x in s for x in ["ray gun", "laser", "drone"]):
-            return "🔫 射线流"
+        if any(x in s for x in ["jetpack", "ornithopter", "levitation pad", "parachute"]):
+            if any(x in s for x in ["lightning rod", "weather machine", "flashbang"]):
+                return "⚡🚀 飞行·雷电流（Flying Storm）"
+            return "🚀 飞行·加速流（Start-Stop Flying）"
+        if any(x in s for x in ["ray gun", "alpha ray", "beta ray", "laser"]):
+            return "🔫 射线流（Ray）"
+        if any(x in s for x in ["cog", "pinwheel", "lightbulb", "pillbuggy"]):
+            return "⚙️ 机械·充能流（Charge）"
 
     elif hero == "Jules":
-        if any(x in s for x in ["jumbo wok", "caviar", "giant lollipop", "zarlic", "basket"]):
-            return "🍳 美食流"
-        if any(x in s for x in ["cleaver", "knife", "chopper"]):
-            return "🔪 料理刀流"
+        if any(x in s for x in ["giant lollipop", "zarlic", "caviar", "jumbo wok"]):
+            return "🍭 巨型棒棒糖流（Giant Lollipop）"
+        if any(x in s for x in ["cleaver", "knife", "chopper", "butcher"]):
+            return "🔪 武器·料理刀流（Weapon Blade）"
+        if any(x in s for x in ["smg", "rifle", "pistol", "crossbow"]):
+            return "🔫 武器流（Weapon）"
 
     elif hero == "Mak":
-        if any(x in s for x in ["library", "atmospheric sampler", "makroscope"]):
-            return "🔬 科研流"
-        if any(x in s for x in ["nitro", "flying potion", "eternal torch"]):
-            return "🧪 药剂流"
+        if any(x in s for x in ["atmospheric sampler", "laboratory", "boiling flask", "athanor"]):
+            return "🧪 药剂·炼金流（Potion Alchemy）"
+        if any(x in s for x in ["icicle", "frost potion", "ice claw", "snow wisp"]):
+            return "❄️ 冰霜流（Cryo）"
 
-    return "🎲 综合流"
+    elif hero == "Duli":
+        if any(x in s for x in ["harmadillo", "bunker", "shielded"]):
+            return "🛡️ 甲虫·护盾流（Harmadillo Shield）"
+        if any(x in s for x in ["dooltron mainframe", "robotic factory", "mech"]):
+            return "🤖 杜尔特隆流（Dooltron）"
+        if any(x in s for x in ["nitro", "critical core", "smg"]):
+            return "💥 速攻·暴击流（Nitro Crit）"
+        if any(x in s for x in ["dinosawer", "trollosaur", "momma-saur", "tanky anky", "diana-saur"]):
+            return "🦕 恐龙流（Dinosaur）"
+
+    elif hero == "Vanessa":
+        if any(x in s for x in ["pufferfish", "tortuga", "submersible", "submarine", "diving helmet"]):
+            return "🐡 海洋·毒刺流（Ocean Puffer）"
+        if any(x in s for x in ["custom scope", "rifle", "sniper"]):
+            return "🎯 狙击流（Sniper）"
+
+    elif hero == "Pygmalion":
+        if any(x in s for x in ["lion cane", "double whammy", "oinkment"]):
+            return "🎪 魔术师流（Trickster）"
+
+    return "🎲 混搭流（Hybrid）"
 
 def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
