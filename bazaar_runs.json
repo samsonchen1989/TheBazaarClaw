@@ -891,5 +891,224 @@
       "Hogwash"
     ],
     "fetched_at": "2026-03-09T08:56:41.065590+00:00"
+  },
+  {
+    "run_id": "fede1038-08ed-4394-84dc-08cafa964468",
+    "player": "LGU",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Hidden Lake",
+      "Messenger Sparrow",
+      "Hunting Hawk"
+    ],
+    "fetched_at": "2026-03-09T09:04:07.812993+00:00"
+  },
+  {
+    "run_id": "99919929-f1f1-45ea-83e4-9ae5fb400bb8",
+    "player": "twoheart",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Rope",
+      "Hunting Hawk",
+      "Great Eagle",
+      "Flying Squirrel",
+      "Runic Claymore"
+    ],
+    "fetched_at": "2026-03-09T09:04:07.813161+00:00"
+  },
+  {
+    "run_id": "b0107b10-a4ed-4874-82eb-c3b8ed2dcd1c",
+    "player": "twoheart",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Rope",
+      "Hunting Hawk",
+      "Great Eagle",
+      "Flying Squirrel",
+      "Runic Claymore"
+    ],
+    "fetched_at": "2026-03-09T09:04:07.813215+00:00"
+  },
+  {
+    "run_id": "a147f1ac-9659-4be3-a962-3cf52c43cd75",
+    "player": "yezhu",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Great Eagle",
+      "Flying Squirrel",
+      "Outlands Terror",
+      "Hunting Hawk",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-09T09:04:07.813277+00:00"
+  },
+  {
+    "run_id": "5570a56f-40cc-4c4f-a4ed-dd19da186cea",
+    "player": "(Anonymous)",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "DJ Circuit Breaker",
+      "RED F1R3FLY",
+      "YLW M4NT1S",
+      "BLK SP1D3R",
+      "GRN W4SP",
+      "BLU B33TL3",
+      "Bill Dozer"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288157+00:00"
+  },
+  {
+    "run_id": "fe5f7273-43ab-4b18-a21f-1644d7b1ea19",
+    "player": "FierySR",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Atmospheric Sampler",
+      "Basilisk Fang",
+      "Runic Great Axe",
+      "Basilisk Fang",
+      "Floor Spike",
+      "Runic Blade"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288221+00:00"
+  },
+  {
+    "run_id": "c0ea7de7-5222-43af-aa56-7de5be2ec1e2",
+    "player": "Malegrande",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Dishwasher",
+      "Captain's Wheel",
+      "Giant Lollipop",
+      "Swash Buckle"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288259+00:00"
+  },
+  {
+    "run_id": "ce8311fe-baec-4102-a31e-9352d7f9e0e8",
+    "player": "dedor111",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Dock Lines",
+      "Jerky",
+      "Chains",
+      "Ghillie Suit",
+      "Night Vision",
+      "Fang",
+      "Swash Buckle"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288304+00:00"
+  },
+  {
+    "run_id": "6438ef24-3193-40ba-b138-c47f879c24a7",
+    "player": "IsaacFTW",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Lion Cane",
+      "Double Whammy",
+      "Gramophone",
+      "Belt",
+      "Oinkment"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288380+00:00"
+  },
+  {
+    "run_id": "7c6b16cb-cff3-4613-924c-384c25079091",
+    "player": "Jota",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Honey Badger",
+      "Warpaint",
+      "Great Eagle"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288450+00:00"
+  },
+  {
+    "run_id": "a703fe35-4c38-44fa-a502-7755817a0ebd",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Tranquil Sigil",
+      "Meat",
+      "Aurora Vista",
+      "Warding Glyphs",
+      "Stretch Pants",
+      "Waterskin"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288487+00:00"
+  },
+  {
+    "run_id": "de768fb0-4d9a-4a01-a400-b3ec49b4e7d0",
+    "player": "7rashpandaaTTV",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Bat",
+      "Beast Tooth",
+      "Honey Badger",
+      "Flying Squirrel",
+      "Spear",
+      "Chains",
+      "Battle Axe"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288533+00:00"
+  },
+  {
+    "run_id": "971e27ea-4113-4aa8-b7f2-5f08351e38ae",
+    "player": "endoxty",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Hidden Lake",
+      "Adrenaline Shot",
+      "Hunter's Pack"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288573+00:00"
+  },
+  {
+    "run_id": "e0e3c73b-334b-4ebd-8140-a1bd56a0b688",
+    "player": "naswing",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Critical Core",
+      "SMG",
+      "Metronome",
+      "Wolverine",
+      "Magic Carpet",
+      "Zoarcid",
+      "Nitro"
+    ],
+    "fetched_at": "2026-03-09T09:40:37.288608+00:00"
   }
 ]
