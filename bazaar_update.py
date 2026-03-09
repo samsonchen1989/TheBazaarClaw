@@ -52,7 +52,17 @@ def load_skills_db():
         return {s.get("name_en", "").strip() for s in skills}
     return set()
 
-SKILL_NAMES: set = set()  # 延迟加载
+
+def normalize(name: str) -> str:
+    """归一化：全小写、去掉连字符/空格/标点，用于模糊匹配"""
+    import string
+    result = name.lower()
+    for ch in string.punctuation + "\u2019\u2018":
+        result = result.replace(ch, "")
+    return result.replace(" ", "")
+
+SKILL_NAMES: set = set()       # 延迟加载（原始名，带连字符）
+SKILL_NAMES_NORM: set = set()  # 归一化版本（全小写、去连字符）
 
 # ──────────────────────────────
 # 加载 items_db
@@ -148,14 +158,15 @@ def parse_runs(page_text):
         hero_m = hero_re.search(before[-200:])  # hero abbrev 紧贴在 run 链接之前
         hero = hero_abbrev.get(hero_m.group(1), "Unknown") if hero_m else "Unknown"
 
-        # 卡牌在 after 中，过滤掉技能
+        # 卡牌在 after 中，过滤掉技能（用归一化比较，解决连字符差异）
         card_names_raw = card_pattern.findall(after)
-        seen_cards = set()
+        seen_cards = []   # 保留顺序，允许重复（重复卡牌正常出现）
+        seen_norm = set() # 只用于技能过滤判断，不用于去重
         items = []
         for cn in card_names_raw:
             name = cn.replace("-", " ").replace("&#39;", "'")
-            if name not in seen_cards and name not in SKILL_NAMES:
-                seen_cards.add(name)
+            name_n = normalize(name)
+            if name_n not in SKILL_NAMES_NORM:
                 items.append(name)
 
         if not items:
@@ -374,16 +385,16 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
                 lines.append(f"> {board}")
                 lines.append(f"> [查看详情](https://bazaardb.gg/run/{r['run_id']})\n")
 
-            # 收集本流派全部卡牌（去重保序）
-            seen, all_cards = set(), []
+            # 收集本流派全部卡牌（去重保序，只用于说明部分）
+            seen_desc, all_cards_unique = set(), []
             for r in genre_runs:
                 for c in r["items"]:
-                    if c not in seen:
-                        seen.add(c)
-                        all_cards.append(c)
+                    if c not in seen_desc:
+                        seen_desc.add(c)
+                        all_cards_unique.append(c)
 
             lines.append("**📖 卡牌说明**\n")
-            for c in all_cards:
+            for c in all_cards_unique:
                 cn = get_cn(c, item_index)
                 desc = get_full_desc(c, item_index)
                 badge = get_size_badge(c, item_index)
@@ -399,12 +410,13 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
 # 主流程
 # ──────────────────────────────
 def main():
-    global SKILL_NAMES
+    global SKILL_NAMES, SKILL_NAMES_NORM
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始更新...")
 
     # 1. 加载 items_db & skills_db
     item_index = load_items_db()
     SKILL_NAMES = load_skills_db()
+    SKILL_NAMES_NORM = {normalize(s) for s in SKILL_NAMES}
     print(f"  items_db: {len(item_index)} 条物品 | skills_db: {len(SKILL_NAMES)} 条技能（将被过滤）")
 
     # 2. 抓取最新对局

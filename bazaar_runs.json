@@ -10,10 +10,10 @@
       "Mr. Richardson",
       "Tortuga",
       "Captain's Wheel",
-      "Card Table",
-      "Right Handed"
+      "Card Table"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495263+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495263+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "544cca21-1cea-4b15-83d6-0e224e002922",
@@ -26,8 +26,7 @@
       "Trail Markers",
       "Flying Squirrel",
       "Runic Claymore",
-      "Hidden Lake",
-      "Right Handed"
+      "Hidden Lake"
     ],
     "fetched_at": "2026-03-09T06:47:08.495327+00:00"
   },
@@ -44,7 +43,8 @@
       "Beast Tooth",
       "Outlands Terror"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495365+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495365+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "a0deb9d6-1569-4ce4-949f-087d525aaeeb",
@@ -57,8 +57,7 @@
       "Hunting Hawk",
       "Anaconda",
       "Targeting Drone",
-      "Messenger Sparrow",
-      "Right Handed"
+      "Messenger Sparrow"
     ],
     "fetched_at": "2026-03-09T06:47:08.495384+00:00"
   },
@@ -89,9 +88,7 @@
       "Runic Claymore",
       "Hunter's Boots",
       "Great Eagle",
-      "Hunter's Journal",
-      "Left Handed",
-      "Stop That"
+      "Hunter's Journal"
     ],
     "fetched_at": "2026-03-09T06:47:08.495422+00:00"
   },
@@ -107,8 +104,7 @@
       "Dryad",
       "Burn Scar",
       "Stretch Pants",
-      "Snow Wisp",
-      "Follow Up Care"
+      "Snow Wisp"
     ],
     "fetched_at": "2026-03-09T06:47:08.495462+00:00"
   },
@@ -123,10 +119,10 @@
       "Levitation Pad",
       "Invulnerability Potion",
       "Hydraulic Press",
-      "Fiber Optics",
-      "Stop That"
+      "Fiber Optics"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495482+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495482+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "ccfc2fdb-1c4e-440a-8b8b-1e322c5bde33",
@@ -139,8 +135,7 @@
       "Lion Cane",
       "Oinkment",
       "Booby Trap",
-      "Belt",
-      "High Yield Investments"
+      "Belt"
     ],
     "fetched_at": "2026-03-09T06:47:08.495499+00:00"
   },
@@ -157,7 +152,8 @@
       "Hunting Hawk",
       "Messenger Sparrow"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495518+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495518+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "5b4ada76-b717-4905-a9a8-72a26094a902",
@@ -173,7 +169,8 @@
       "Stretch Pants",
       "Waterskin"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495536+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495536+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "852875e7-e2b1-4e18-833f-92b4ba6cc7bd",
@@ -190,7 +187,8 @@
       "Hunting Knife",
       "Karst"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495575+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495575+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "a5786491-49d4-4206-a37b-5b2a2b8578e1",
@@ -200,11 +198,13 @@
     "wins": 10,
     "items": [
       "Boar Mask",
+      "Boar Mask",
       "Flame Sigil",
       "Tree Club",
       "Waterskin"
     ],
-    "fetched_at": "2026-03-09T06:47:08.495608+00:00"
+    "fetched_at": "2026-03-09T06:47:08.495608+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "ddf32eae-2d6c-4946-9cd6-8d74b663ccf4",
@@ -219,10 +219,10 @@
       "Wand",
       "Rope",
       "Hunter's Journal",
-      "Spirit Diffuser",
-      "Wake Up Call"
+      "Spirit Diffuser"
     ],
-    "fetched_at": "2026-03-09T06:58:23.084415+00:00"
+    "fetched_at": "2026-03-09T06:58:23.084415+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "908a34f3-cf1b-4e10-984a-928e56f53db5",
@@ -237,10 +237,10 @@
       "Skillet",
       "Jerky",
       "Incendiary Rounds",
-      "Dryad",
-      "Stop That"
+      "Dryad"
     ],
-    "fetched_at": "2026-03-09T06:58:23.084474+00:00"
+    "fetched_at": "2026-03-09T06:58:23.084474+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "19e9c146-b112-4535-bda2-b9dde6aec6d2",
@@ -253,17 +253,10 @@
       "Flying Squirrel",
       "Runic Claymore",
       "Waterskin",
-      "Hunting Hawk",
-      "Right Handed",
-      "Nitro",
-      "Metronome",
-      "Soldering Gun",
-      "Micro Dave",
-      "Ignition Core",
-      "Fiber Optics",
-      "Sauna"
+      "Hunting Hawk"
     ],
-    "fetched_at": "2026-03-09T06:58:23.084521+00:00"
+    "fetched_at": "2026-03-09T06:58:23.084521+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "946aa768-c835-43b2-bccc-02e25367317f",
@@ -296,7 +289,8 @@
       "Duct Tape",
       "SMG"
     ],
-    "fetched_at": "2026-03-09T06:58:23.084582+00:00"
+    "fetched_at": "2026-03-09T06:58:23.084582+00:00",
+    "fetched_from_detail": true
   },
   {
     "run_id": "f62e8854-b6ea-47c3-9500-1991e8979e2e",
@@ -359,9 +353,316 @@
       "RED F1R3FLY",
       "Fiber Optics",
       "Robotic Factory",
-      "Bill Dozer",
-      "Right Handed"
+      "Bill Dozer"
     ],
     "fetched_at": "2026-03-09T07:10:29.588669+00:00"
+  },
+  {
+    "run_id": "68598c50-90af-4163-b511-f2c0f6ac08d9",
+    "player": "LGU",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Energy Potion",
+      "Athanor",
+      "Frost Potion",
+      "Hourglass",
+      "Ice Claw",
+      "Atmospheric Sampler"
+    ],
+    "fetched_at": "2026-03-09T07:18:11.226537+00:00"
+  },
+  {
+    "run_id": "ae2a4a9e-880e-474b-8526-8ba6450a6291",
+    "player": "filbert",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Fang",
+      "Warpaint",
+      "Outlands Terror",
+      "Fogshroom"
+    ],
+    "fetched_at": "2026-03-09T07:18:11.226587+00:00"
+  },
+  {
+    "run_id": "dee09f74-67c6-408b-b124-d391c64c051c",
+    "player": "FierySR",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Flying Squirrel",
+      "Stretch Pants",
+      "Snow Wisp",
+      "Firefly Lantern",
+      "Warpaint",
+      "Torch"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154311+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "824a5b3c-7c1a-450d-91c2-938d28341295",
+    "player": "kx4n",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Waystones",
+      "Hunting Hawk",
+      "Great Eagle",
+      "Trebuchet"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154371+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "91db46c7-4ec8-4b8e-a37d-b91273ccd6dd",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Hunter's Boots",
+      "Chains",
+      "Fairy Circle"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154402+00:00"
+  },
+  {
+    "run_id": "590e3e13-8320-42f9-b469-63bb99d77ecf",
+    "player": "ShowShowWay",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Snow Wisp",
+      "Hunting Hawk",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154425+00:00"
+  },
+  {
+    "run_id": "a8cab1b6-460e-4c0d-8e40-92e47764bbb3",
+    "player": "LGU",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Laboratory",
+      "Energy Potion",
+      "Boiling Flask",
+      "Caustic Solvent",
+      "Atmospheric Sampler",
+      "Icicle"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154451+00:00"
+  },
+  {
+    "run_id": "61e6dd4f-dfd2-4e3b-8658-9c5b3f35c97d",
+    "player": "CrazyChef",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Honey Badger",
+      "Beast Tooth",
+      "Pocket Knife",
+      "Black Pepper",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154501+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "0a3adc09-167a-4648-95c1-2f6790b53e9b",
+    "player": "naswing",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Micro Mach",
+      "Nitro",
+      "Thrusters",
+      "Critical Core",
+      "Crane",
+      "Dino Saddle"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154524+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "6a9f2d80-2458-4784-b6e9-dd8e039ddc7b",
+    "player": "floMa",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Fogshroom",
+      "Honey Badger",
+      "Warpaint",
+      "Chains",
+      "Waterskin",
+      "Steel Bramble"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154547+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "cfea499b-a9c9-42d5-afed-ad1ed84ade70",
+    "player": "bonyodog",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Honey Badger",
+      "Beast Tooth",
+      "Fang",
+      "Hunting Hawk"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154566+00:00"
+  },
+  {
+    "run_id": "9010a5c2-3a1e-4136-9b7b-e00f1ac3d162",
+    "player": "littlemonk",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Cog",
+      "Plasma Grenade",
+      "Levitation Pad",
+      "Icicle",
+      "Pylon",
+      "Dooltron"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154596+00:00"
+  },
+  {
+    "run_id": "d5927b08-480e-4b27-b3f9-1088c6dc61f2",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Messenger Sparrow",
+      "Levitation Pad",
+      "Nitro",
+      "Rope",
+      "Hunting Hawk",
+      "Flying Squirrel",
+      "Runic Claymore"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154626+00:00",
+    "fetched_from_detail": true
+  },
+  {
+    "run_id": "b2233987-7a68-47ff-a5d2-4158a991976c",
+    "player": "prefer2s1eep",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Custom Scope",
+      "Submarine",
+      "Diving Helmet",
+      "Submersible",
+      "Dive Weights"
+    ],
+    "fetched_at": "2026-03-09T08:04:06.154649+00:00"
+  },
+  {
+    "run_id": "f8e2d1c3-89e1-4b00-a84a-15fa71dfbb5b",
+    "player": "novemx",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Flying Squirrel",
+      "Firefly Lantern",
+      "Honey Badger",
+      "Beast Tooth",
+      "Seashadow"
+    ],
+    "fetched_at": "2026-03-09T08:07:46.728962+00:00"
+  },
+  {
+    "run_id": "1cf08cb7-5028-41c7-8cec-155614bada9f",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Machete",
+      "Trail Markers",
+      "Bear Mask",
+      "Boar Mask",
+      "Flame Sigil",
+      "Belt"
+    ],
+    "fetched_at": "2026-03-09T08:31:25.424962+00:00"
+  },
+  {
+    "run_id": "cd418593-d578-459f-acc6-4bc610309e00",
+    "player": "endoxty",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Honey Badger",
+      "Warpaint",
+      "Great Eagle"
+    ],
+    "fetched_at": "2026-03-09T08:31:25.425043+00:00"
+  },
+  {
+    "run_id": "587faf6d-0b6e-4a40-800d-8255d56e31a5",
+    "player": "bonyodog",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Honey Badger",
+      "Beast Tooth",
+      "Hunting Hawk",
+      "Flying Squirrel",
+      "Great Eagle",
+      "Adrenaline Shot"
+    ],
+    "fetched_at": "2026-03-09T08:31:25.425096+00:00"
+  },
+  {
+    "run_id": "8f0ffdd3-9cbb-410c-9388-a05afb2cf168",
+    "player": "dedor111",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Runic Claymore",
+      "Flying Squirrel",
+      "Spear",
+      "Messenger Sparrow",
+      "Hunting Hawk",
+      "Trail Markers"
+    ],
+    "fetched_at": "2026-03-09T08:31:25.425152+00:00"
   }
 ]
