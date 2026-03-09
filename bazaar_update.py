@@ -23,6 +23,20 @@ BUILDS_FILE = os.path.join(WORKSPACE, "bazaar_builds.md")
 ITEMS_DB = "/tmp/items_db.json"
 ITEMS_DB_FALLBACK = os.path.join(WORKSPACE, "items_db.json")
 
+# GitHub 同步配置（token 从 .env 或环境变量读取）
+def _load_token():
+    env_file = os.path.join(WORKSPACE, ".env")
+    if os.path.exists(env_file):
+        for line in open(env_file):
+            line = line.strip()
+            if line.startswith("GITHUB_TOKEN="):
+                return line.split("=", 1)[1].strip()
+    return os.environ.get("GITHUB_TOKEN", "")
+
+GITHUB_TOKEN = _load_token()
+GITHUB_REPO_BARE = "github.com/samsonchen1989/TheBazaarClaw.git"
+REPO_DIR = "/tmp/TheBazaarClaw"
+
 # ──────────────────────────────
 # 加载 items_db
 # ──────────────────────────────
@@ -406,5 +420,46 @@ def main():
 
     return added, len(local_runs)
 
+
+def push_to_github(added: int):
+    """把最新文件同步推送到 GitHub"""
+    if not GITHUB_TOKEN:
+        print("  GitHub: 未配置 token，跳过推送")
+        return
+
+    repo_url = f"https://{GITHUB_TOKEN}@{GITHUB_REPO_BARE}"
+
+    # 确保本地仓库存在
+    if not os.path.exists(os.path.join(REPO_DIR, ".git")):
+        subprocess.run(["git", "clone", repo_url, REPO_DIR], capture_output=True)
+        subprocess.run(["git", "config", "user.email", "samsonschen@users.noreply.github.com"], cwd=REPO_DIR, capture_output=True)
+        subprocess.run(["git", "config", "user.name", "samsonschen"], cwd=REPO_DIR, capture_output=True)
+    else:
+        # 拉取前先更新 remote url（token 可能刷新）
+        subprocess.run(["git", "remote", "set-url", "origin", repo_url], cwd=REPO_DIR, capture_output=True)
+        subprocess.run(["git", "pull", "--rebase"], cwd=REPO_DIR, capture_output=True)
+
+    # 复制最新文件（不包含 .env）
+    import shutil
+    for fname in ["bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py"]:
+        src = os.path.join(WORKSPACE, fname)
+        if os.path.exists(src):
+            shutil.copy2(src, REPO_DIR)
+
+    # 提交并推送
+    subprocess.run(["git", "add", "bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py"], cwd=REPO_DIR, capture_output=True)
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+    commit_msg = f"自动更新：{now_str}，新增 {added} 条对局"
+    r = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, capture_output=True, text=True)
+    if "nothing to commit" in r.stdout:
+        print("  GitHub: 无变更，跳过推送")
+        return
+    r2 = subprocess.run(["git", "push", "origin", "main"], cwd=REPO_DIR, capture_output=True, text=True)
+    if r2.returncode == 0:
+        print(f"  GitHub: 推送成功 → https://{GITHUB_REPO_BARE}")
+    else:
+        print(f"  GitHub: 推送失败 {r2.stderr[:200]}")
+
 if __name__ == "__main__":
-    main()
+    added, total = main()
+    push_to_github(added)

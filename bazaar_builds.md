@@ -1,7 +1,7 @@
 # 大巴扎（The Bazaar）构筑攻略
 
-> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-09 14:47
-> 累计收录对局：13 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
+> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-09 14:59
+> 累计收录对局：19 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
 > 每英雄最多 5 种流派，每流派最多 5 套阵容
 > **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库
 
@@ -160,6 +160,34 @@
 - **Toughness** ：（暂无数据）
 - **Trained** ：（暂无数据）
 
+### 🎲 综合流
+
+**阵容 1** 🥇 10连胜 · rrsseeaann
+> 纸风车 | 降落伞 | 喷气背包 | 西瓜虫车 | 定向无人机 | 风速仪 | 纸飞机 | Ice Smasher | Strength | Inspired Rage | Hard Shell | Final Flame | Defense Grid | Haunting Flight | Flashy Mechanic | Expert Pilot | Initial Dose | Quick Freeze | Static Acceleration
+> [查看详情](https://bazaardb.gg/run/f62e8854-b6ea-47c3-9500-1991e8979e2e)
+
+**📖 卡牌说明**
+
+- **纸风车** 🟦小：加速1件物品1秒 ／ 一件小型物品开始飞行 ／ 〔被动〕有物品开始飞行时，为此物品充能2秒
+- **降落伞** 🟧中：生命再生量提高10（限本场战斗） ／ 〔被动〕有物品开始或停止飞行时，此物品生命再生量提高8/12/16（限本场战斗）。 ／ 〔被动〕每场战斗己方生命值首次降至一半时，使用此物品。
+- **喷气背包** 🟦小：加速此物品左侧的物品1/2/3/4秒 ／ 如果此物品正在飞行，就加速其右侧的物品1/2/3/4秒
+- **西瓜虫车** 🟧中：获得40护盾 ／ 造成伤害，等量于己方护盾 ／ 〔被动〕此物品被加速时，其护盾提高+40/80/120（限本场战斗）。
+- **定向无人机** 🟦小：加速此物品左侧相邻的物品2秒，并使其+3/6/9/12%暴击率（限本场战斗）。
+- **风速仪** 🟧中：一件相邻物品开始飞行 ／ 〔被动〕己方的一件物品开始或停止飞行时，使之加速2秒。
+- **纸飞机** 🟦小：此物品开始或停止飞行
+- **Ice Smasher** ：（暂无数据）
+- **Strength** ：（暂无数据）
+- **Inspired Rage** ：（暂无数据）
+- **Hard Shell** ：（暂无数据）
+- **Final Flame** ：（暂无数据）
+- **Defense Grid** ：（暂无数据）
+- **Haunting Flight** ：（暂无数据）
+- **Flashy Mechanic** ：（暂无数据）
+- **Expert Pilot** ：（暂无数据）
+- **Initial Dose** ：（暂无数据）
+- **Quick Freeze** ：（暂无数据）
+- **Static Acceleration** ：（暂无数据）
+
 
 ---
 
@@ -187,6 +215,37 @@
 - **Initial Chill** ：（暂无数据）
 - **Strength** ：（暂无数据）
 - **Right Handed** ：（暂无数据）
+
+
+---
+
+## 杜利（Duli）
+
+### 🎲 综合流
+
+**阵容 1** 🥇 10连胜 · naswing
+> 多尔王主机 | 铁甲犰狳 | 尖刺铁丝网 | 氮气罐 | 装甲核心 | 布胶带 | 冲锋枪 | Left Eye | Machine Learning | Flashy Pilot | Keen Eye | Tiny Dancer | Strength | Precision Tools | Tracer Fire | Buddy System | Panic
+> [查看详情](https://bazaardb.gg/run/1042efad-88ed-43b0-8a10-8d369dd6dda4)
+
+**📖 卡牌说明**
+
+- **多尔王主机** 🟧中：〔被动〕使用伙伴时，为一件核心充能1/2秒，加速一件大型物品1/2秒。 ／ 〔被动〕你的多尔王获得核心类型。
+- **铁甲犰狳** 🟧中：造成50/100/150/200伤害 ／ 〔被动〕获得护盾时，为此物品充能2秒。
+- **尖刺铁丝网** 🟦小：造成20/30/40/50伤害 ／ 减速2件物品1秒 ／ 〔被动〕获得护盾时，为此物品充能1秒。
+- **氮气罐** 🟦小：对双方玩家都造成4/8灼烧 ／ 为一件物品充能1/2秒
+- **装甲核心** 🟧中：获得20护盾 ／ 此物品和其右侧护盾物品的护盾提高+15/30/60护盾（限本场战斗） ／ 〔被动〕使用此物品左侧的任意物品时，为此物品充能1秒。
+- **布胶带** 🟦小：减速一件物品1/2/3/4秒 ／ 〔被动〕使用相邻物品时，获得5/10/15/20护盾。
+- **冲锋枪** 🟦小：造成10伤害 ／ 弹药: 6/8/10/12
+- **Left Eye** ：（暂无数据）
+- **Machine Learning** ：（暂无数据）
+- **Flashy Pilot** ：（暂无数据）
+- **Keen Eye** ：（暂无数据）
+- **Tiny Dancer** ：（暂无数据）
+- **Strength** ：（暂无数据）
+- **Precision Tools** ：（暂无数据）
+- **Tracer Fire** ：（暂无数据）
+- **Buddy System** ：（暂无数据）
+- **Panic** ：（暂无数据）
 
 
 ---
