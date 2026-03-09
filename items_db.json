@@ -98131,8 +98131,8 @@
     "skills": [],
     "skills_passive": [
       {
-        "en": "The first time any item is used each fight, gain 0 Rage.",
-        "cn": "每场战斗中任意物品首次被使用时，获得0怒火。"
+        "en": "The first time any item is used each fight, gain 30 Rage.",
+        "cn": "每场战斗中任意物品首次被使用时，获得30怒火。"
       },
       {
         "en": "When you Enrage, deal damage and gain Shield equal to 10/15/20% of your Max Health. [0,0]",

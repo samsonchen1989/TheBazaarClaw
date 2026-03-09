@@ -664,5 +664,69 @@
       "Trail Markers"
     ],
     "fetched_at": "2026-03-09T08:31:25.425152+00:00"
+  },
+  {
+    "run_id": "5dfd7da4-8a6e-4949-9b71-4ca8576d065f",
+    "player": "Higelmelic",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Wild Boar",
+      "Karst",
+      "Wildroot Amulet",
+      "Stretch Pants",
+      "Waterskin",
+      "Snow Wisp"
+    ],
+    "fetched_at": "2026-03-09T08:41:42.858360+00:00"
+  },
+  {
+    "run_id": "cc7b4c61-bbff-47ee-b2e3-84ad27dfa0b5",
+    "player": "FierySR",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Bat",
+      "Hunter's Axe",
+      "Messenger Sparrow",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-09T08:41:42.858482+00:00"
+  },
+  {
+    "run_id": "574c538f-f6ca-4d08-bfa9-90dd8f4c9efe",
+    "player": "novemx",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Holsters",
+      "Flare",
+      "Healing Draught",
+      "Port",
+      "Battery"
+    ],
+    "fetched_at": "2026-03-09T08:41:42.858522+00:00"
+  },
+  {
+    "run_id": "9f1ac850-08e8-416e-8654-e681f31bf4e5",
+    "player": "corien",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Dooltron",
+      "Smelling Salts",
+      "Spider Fern",
+      "Metronome",
+      "Nitro",
+      "Rainbow Potion",
+      "Icicle"
+    ],
+    "fetched_at": "2026-03-09T08:41:42.858565+00:00"
   }
 ]
