@@ -1,7 +1,7 @@
 # 大巴扎（The Bazaar）构筑攻略
 
-> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-09 14:59
-> 累计收录对局：19 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
+> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-09 15:07
+> 累计收录对局：21 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
 > 每英雄最多 5 种流派，每流派最多 5 套阵容
 > **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库
 
@@ -13,7 +13,7 @@
 ### 🎲 综合流
 
 **阵容 1** 🏆 10连胜 · A23F
-> 野猪面具 | 烈焰符印 | 树木大棒 | 水囊 | Inspired Rage | Extended Rage | Quick Bite | Hallucinations | Strength | Beautiful Friendship | Arbitrage | Peak Rage
+> 野猪面具 | 烈焰符印 | 树木大棒 | 水囊
 > [查看详情](https://bazaardb.gg/run/a5786491-49d4-4206-a37b-5b2a2b8578e1)
 
 **📖 卡牌说明**
@@ -22,19 +22,11 @@
 - **烈焰符印** 🟧中：〔被动〕当你造成灼烧时，获得0怒火。 ／ 〔被动〕当你进入暴怒状态时，造成灼烧，等量于你最大生命值的3/6%。
 - **树木大棒** 🟥大：造成1000/2000伤害 ／ 〔被动〕当你使用相邻物品时，获得怒火。 ／ 〔被动〕此物品只有在暴怒期间才会为自身充能，且冷却时间缩短7秒。
 - **水囊** 🟦小：为此物品左侧的物品充能1秒 ／ 〔被动〕当你使用此物品左侧相邻的物品时，治疗15/30/60/120。
-- **Inspired Rage** ：（暂无数据）
-- **Extended Rage** ：（暂无数据）
-- **Quick Bite** ：（暂无数据）
-- **Hallucinations** ：（暂无数据）
-- **Strength** ：（暂无数据）
-- **Beautiful Friendship** ：（暂无数据）
-- **Arbitrage** ：（暂无数据）
-- **Peak Rage** ：（暂无数据）
 
 ### 🦅⚔️ 飞鸟·剑流
 
 **阵容 1** 🥇 10连胜 · (Anonymous)
-> 猎人背包 | 路径标记 | 飞鼠 | 符文阔剑 | 隐秘之湖 | Inspired Rage | Deadly Eye | Piercing Temper | Frontal Shielding | Improved Toxins | Keen Eye | Right Handed | Death from Above | Rear Shielding | Inexorable | Swift Temper | Tracer Fire | Clean Storefront
+> 猎人背包 | 路径标记 | 飞鼠 | 符文阔剑 | 隐秘之湖 | Right Handed
 > [查看详情](https://bazaardb.gg/run/544cca21-1cea-4b15-83d6-0e224e002922)
 
 **📖 卡牌说明**
@@ -44,24 +36,12 @@
 - **飞鼠** 🟦小：加速此物品右侧相邻的物品1/2/3/4秒，并使其开始飞行
 - **符文阔剑** 🟥大：造成伤害，等量于最大生命值的10% ／ 〔被动〕此物品暴击时，获得最大生命值，等量于此物品的伤害（限本场战斗）。
 - **隐秘之湖** 🟥大：〔被动〕+20/30/40%最大生命值。 ／ 〔被动〕当你的生命值低于50%最大生命值时，相邻物品冷却时间缩短一半。
-- **Inspired Rage** ：（暂无数据）
-- **Deadly Eye** ：（暂无数据）
-- **Piercing Temper** ：（暂无数据）
-- **Frontal Shielding** ：（暂无数据）
-- **Improved Toxins** ：（暂无数据）
-- **Keen Eye** ：（暂无数据）
 - **Right Handed** ：（暂无数据）
-- **Death from Above** ：（暂无数据）
-- **Rear Shielding** ：（暂无数据）
-- **Inexorable** ：（暂无数据）
-- **Swift Temper** ：（暂无数据）
-- **Tracer Fire** ：（暂无数据）
-- **Clean Storefront** ：（暂无数据）
 
 ### 🦅 飞鸟流
 
 **阵容 1** 🥇 10连胜 · akyria
-> 飞鼠 | 树木大棒 | 蜜獾 | 兽牙 | 荒原恐兽 | Inspired Rage | Extended Rage | Streamline Weapon | Foreboding Winds | Quality over Quantity | Adrenaline Rush | Piercing Temper | Paralytic Poison | Bloodhound | Vengeance
+> 飞鼠 | 树木大棒 | 蜜獾 | 兽牙 | 荒原恐兽
 > [查看详情](https://bazaardb.gg/run/381948a9-57ce-4b81-93fe-eda388224698)
 
 **📖 卡牌说明**
@@ -71,22 +51,20 @@
 - **蜜獾** 🟧中：造成10伤害 ／ 〔被动〕当你获得怒火时，为此物品充能1秒。 ／ 〔被动〕当你脱离暴怒状态时，此物品的充能量和冷却时间都增加1秒（限本场战斗）。
 - **兽牙** 🟦小：〔被动〕使用相邻武器时，获得怒火。 ／ 〔被动〕当你进入暴怒状态时，相邻武器+30/60/90/120伤害（限本场战斗）。
 - **荒原恐兽** 🟥大：造成300/600伤害 ／ 〔被动〕暴怒期间，此物品拥有吸血且冷却时间缩短3/5秒。 ／ 〔被动〕你获得的怒火翻倍。
-- **Inspired Rage** ：（暂无数据）
-- **Extended Rage** ：（暂无数据）
-- **Streamline Weapon** ：（暂无数据）
-- **Foreboding Winds** ：（暂无数据）
-- **Quality over Quantity** ：（暂无数据）
-- **Adrenaline Rush** ：（暂无数据）
-- **Piercing Temper** ：（暂无数据）
-- **Paralytic Poison** ：（暂无数据）
-- **Bloodhound** ：（暂无数据）
-- **Vengeance** ：（暂无数据）
 
 ### 🦅 飞鸟流
 
 **阵容 1** 🥇 10连胜 · RsCrazy
-> 荒原恐兽 | 猎鹰 | 巨蟒 | 定向无人机 | 信使麻雀 | Cult Member | Rigged | Inspired Rage | Shortened Rage | Distributed Systems | Adrenaline Rush | Streamline Weapon | Right Handed | Bloodhound | Toughness | Death from Above
+> 荒原恐兽 | 猎鹰 | 巨蟒 | 定向无人机 | 信使麻雀 | Right Handed
 > [查看详情](https://bazaardb.gg/run/a0deb9d6-1569-4ce4-949f-087d525aaeeb)
+
+**阵容 2** 🥇 10连胜 · CK223
+> 荒原恐兽 | 兽笛 | 巨鹰 | 猎鹰 | 信使麻雀
+> [查看详情](https://bazaardb.gg/run/5954cf5c-bac5-440a-bc95-3c34d5545fa5)
+
+**阵容 3** 🥇 10连胜 · CK223
+> 荒原恐兽 | 兽笛 | 巨蟒 | 猎鹰 | 信使麻雀
+> [查看详情](https://bazaardb.gg/run/570e8332-4659-4a28-8b04-10446db2f684)
 
 **📖 卡牌说明**
 
@@ -95,22 +73,14 @@
 - **巨蟒** 🟥大：造成伤害，等量于本场战斗中获得怒火的两倍。 ／ 〔被动〕当你进入暴怒状态时，此物品+2/3多重释放（限本场战斗）。
 - **定向无人机** 🟦小：加速此物品左侧相邻的物品2秒，并使其+3/6/9/12%暴击率（限本场战斗）。
 - **信使麻雀** 🟦小：加速一件物品1秒 ／ 为其他飞行物品充能1秒
-- **Cult Member** ：（暂无数据）
-- **Rigged** ：（暂无数据）
-- **Inspired Rage** ：（暂无数据）
-- **Shortened Rage** ：（暂无数据）
-- **Distributed Systems** ：（暂无数据）
-- **Adrenaline Rush** ：（暂无数据）
-- **Streamline Weapon** ：（暂无数据）
 - **Right Handed** ：（暂无数据）
-- **Bloodhound** ：（暂无数据）
-- **Toughness** ：（暂无数据）
-- **Death from Above** ：（暂无数据）
+- **兽笛** 🟦小：加速相邻伙伴2秒
+- **巨鹰** 🟥大：造成300/600伤害 ／ 〔被动〕己方正在飞行的物品伤害和护盾翻倍。 ／ 〔被动〕当你进入暴怒状态时，2/3件己方物品开始飞行。
 
 ### 🦅⚔️ 飞鸟·剑流
 
 **阵容 1** 🥇 10连胜 · (Anonymous)
-> 飞鼠 | 符文阔剑 | 猎人之靴 | 巨鹰 | 猎人日志 | Inspired Rage | Rust | Extended Rage | Toughness | Hallucinations | Mixed Message | Adrenaline Rush | Left Handed | Stop That | Precision Tools | Creeping Chill | Arms Dealer
+> 飞鼠 | 符文阔剑 | 猎人之靴 | 巨鹰 | 猎人日志 | Left Handed | Stop That
 > [查看详情](https://bazaardb.gg/run/a3b9c97d-50d0-485e-8f10-bc651146c92a)
 
 **📖 卡牌说明**
@@ -120,18 +90,8 @@
 - **猎人之靴** 🟧中：减速相邻物品1秒并为其充能1秒。 ／ 〔被动〕当己方物品被减速时，该物品+10/20%暴击率（限本场战斗）。 ／ 〔被动〕暴怒期间，此物品+1多重释放。
 - **巨鹰** 🟥大：造成300/600伤害 ／ 〔被动〕己方正在飞行的物品伤害和护盾翻倍。 ／ 〔被动〕当你进入暴怒状态时，2/3件己方物品开始飞行。
 - **猎人日志** 🟦小：〔被动〕己方物品获得+暴击率，等量于此物品价值。 ／ 〔被动〕当你在对怪物的战斗中获胜时，此物品+2/3/4/5价值。
-- **Inspired Rage** ：（暂无数据）
-- **Rust** ：（暂无数据）
-- **Extended Rage** ：（暂无数据）
-- **Toughness** ：（暂无数据）
-- **Hallucinations** ：（暂无数据）
-- **Mixed Message** ：（暂无数据）
-- **Adrenaline Rush** ：（暂无数据）
 - **Left Handed** ：（暂无数据）
 - **Stop That** ：（暂无数据）
-- **Precision Tools** ：（暂无数据）
-- **Creeping Chill** ：（暂无数据）
-- **Arms Dealer** ：（暂无数据）
 
 
 ---
@@ -141,7 +101,7 @@
 ### 🎲 综合流
 
 **阵容 1** 🥇 10连胜 · Suntyyyy
-> 避雷针 | 闪光弹 | 氮气罐 | 灯泡 | 天气机 | 齿轮 | Shatter | Scramble Fighters | Artillery Spotter | Quick Freeze | Deadly Eye | Toughness | Trained
+> 避雷针 | 闪光弹 | 氮气罐 | 灯泡 | 天气机 | 齿轮
 > [查看详情](https://bazaardb.gg/run/16d71197-d3c5-4c5d-b618-a7e75a473946)
 
 **📖 卡牌说明**
@@ -152,18 +112,11 @@
 - **灯泡** 🟦小：为右侧的科技物品充能1秒 ／ 〔被动〕购买此物品时，获得任意英雄的一件小型科技物品。
 - **天气机** 🟥大：使2/3/4件物品开始飞行 ／ 冻结每位玩家布阵区上的一件物品1/2/3秒 ／ 减速所有物品1/2/3秒
 - **齿轮** 🟦小：加速一件相邻物品1/2/3/4秒
-- **Shatter** ：（暂无数据）
-- **Scramble Fighters** ：（暂无数据）
-- **Artillery Spotter** ：（暂无数据）
-- **Quick Freeze** ：（暂无数据）
-- **Deadly Eye** ：（暂无数据）
-- **Toughness** ：（暂无数据）
-- **Trained** ：（暂无数据）
 
 ### 🎲 综合流
 
 **阵容 1** 🥇 10连胜 · rrsseeaann
-> 纸风车 | 降落伞 | 喷气背包 | 西瓜虫车 | 定向无人机 | 风速仪 | 纸飞机 | Ice Smasher | Strength | Inspired Rage | Hard Shell | Final Flame | Defense Grid | Haunting Flight | Flashy Mechanic | Expert Pilot | Initial Dose | Quick Freeze | Static Acceleration
+> 纸风车 | 降落伞 | 喷气背包 | 西瓜虫车 | 定向无人机 | 风速仪 | 纸飞机
 > [查看详情](https://bazaardb.gg/run/f62e8854-b6ea-47c3-9500-1991e8979e2e)
 
 **📖 卡牌说明**
@@ -175,18 +128,6 @@
 - **定向无人机** 🟦小：加速此物品左侧相邻的物品2秒，并使其+3/6/9/12%暴击率（限本场战斗）。
 - **风速仪** 🟧中：一件相邻物品开始飞行 ／ 〔被动〕己方的一件物品开始或停止飞行时，使之加速2秒。
 - **纸飞机** 🟦小：此物品开始或停止飞行
-- **Ice Smasher** ：（暂无数据）
-- **Strength** ：（暂无数据）
-- **Inspired Rage** ：（暂无数据）
-- **Hard Shell** ：（暂无数据）
-- **Final Flame** ：（暂无数据）
-- **Defense Grid** ：（暂无数据）
-- **Haunting Flight** ：（暂无数据）
-- **Flashy Mechanic** ：（暂无数据）
-- **Expert Pilot** ：（暂无数据）
-- **Initial Dose** ：（暂无数据）
-- **Quick Freeze** ：（暂无数据）
-- **Static Acceleration** ：（暂无数据）
 
 
 ---
@@ -196,7 +137,7 @@
 ### 🎲 综合流
 
 **阵容 1** 🥇 10连胜 · (Anonymous)
-> 河豚 | 理查森先生 | 巨龟托图加 | 船舵 | 牌桌 | Bloodhound | Command Ship | Final Flame | Friendzone | Paralytic Poison | Oceanic Rush | Initial Chill | Strength | Right Handed
+> 河豚 | 理查森先生 | 巨龟托图加 | 船舵 | 牌桌 | Right Handed
 > [查看详情](https://bazaardb.gg/run/b7cd82e7-47b9-4698-8079-9f400e5199e6)
 
 **📖 卡牌说明**
@@ -206,14 +147,6 @@
 - **巨龟托图加** 🟥大：造成450/900伤害 ／ 加速其他物品1秒 ／ 〔被动〕使用另一个伙伴时，为此物品充能2秒。
 - **船舵** 🟧中：加速相邻物品1/2/3秒 ／ 〔被动〕如果拥有载具或大型物品，此物品的冷却时间就减半。
 - **牌桌** 🟧中：一个伙伴+1多重释放（限本场战斗） ／ 每有一个非伙伴，此物品的冷却时间就增加1秒（限本场战斗）。[1000]
-- **Bloodhound** ：（暂无数据）
-- **Command Ship** ：（暂无数据）
-- **Final Flame** ：（暂无数据）
-- **Friendzone** ：（暂无数据）
-- **Paralytic Poison** ：（暂无数据）
-- **Oceanic Rush** ：（暂无数据）
-- **Initial Chill** ：（暂无数据）
-- **Strength** ：（暂无数据）
 - **Right Handed** ：（暂无数据）
 
 
@@ -223,8 +156,24 @@
 
 ### 🎲 综合流
 
+**阵容 1** 🏆 10连胜 · littlemonk
+> 暴击核心 | 贝塔射线 | 冲锋枪 | 冷却风扇 | 主板 | 冰爪 | 定向无人机
+> [查看详情](https://bazaardb.gg/run/6f38c071-de14-4a83-a245-742ab261040e)
+
+**📖 卡牌说明**
+
+- **暴击核心** 🟧中：造成50伤害 ／ 〔被动〕此物品及其右侧物品+30/45/60%暴击率。 ／ 〔被动〕造成暴击或使用此物品左侧的任意物品时，为此物品充能1秒。
+- **贝塔射线** 🟦小：冻结一件物品1/1.5/2秒 ／ 〔被动〕使用核心或其他射线时，为此物品充能1秒。
+- **冲锋枪** 🟦小：造成10伤害 ／ 弹药: 6/8/10/12
+- **冷却风扇** 🟦小：冻结相邻物品1/0.5秒 ／ 为你净化一半的灼烧
+- **主板** 🟧中：加速相邻物品1/2/3秒 ／ 〔被动〕使用其他科技物品时，为此物品充能1秒。
+- **冰爪** 🟧中：造成60伤害 ／ 冻结1/2/3件物品1秒 ／ 〔被动〕触发冻结时，此物品伤害提高+60/90/120（限本场战斗）。
+- **定向无人机** 🟦小：加速此物品左侧相邻的物品2秒，并使其+3/6/9/12%暴击率（限本场战斗）。
+
+### 🎲 综合流
+
 **阵容 1** 🥇 10连胜 · naswing
-> 多尔王主机 | 铁甲犰狳 | 尖刺铁丝网 | 氮气罐 | 装甲核心 | 布胶带 | 冲锋枪 | Left Eye | Machine Learning | Flashy Pilot | Keen Eye | Tiny Dancer | Strength | Precision Tools | Tracer Fire | Buddy System | Panic
+> 多尔王主机 | 铁甲犰狳 | 尖刺铁丝网 | 氮气罐 | 装甲核心 | 布胶带 | 冲锋枪
 > [查看详情](https://bazaardb.gg/run/1042efad-88ed-43b0-8a10-8d369dd6dda4)
 
 **📖 卡牌说明**
@@ -236,16 +185,6 @@
 - **装甲核心** 🟧中：获得20护盾 ／ 此物品和其右侧护盾物品的护盾提高+15/30/60护盾（限本场战斗） ／ 〔被动〕使用此物品左侧的任意物品时，为此物品充能1秒。
 - **布胶带** 🟦小：减速一件物品1/2/3/4秒 ／ 〔被动〕使用相邻物品时，获得5/10/15/20护盾。
 - **冲锋枪** 🟦小：造成10伤害 ／ 弹药: 6/8/10/12
-- **Left Eye** ：（暂无数据）
-- **Machine Learning** ：（暂无数据）
-- **Flashy Pilot** ：（暂无数据）
-- **Keen Eye** ：（暂无数据）
-- **Tiny Dancer** ：（暂无数据）
-- **Strength** ：（暂无数据）
-- **Precision Tools** ：（暂无数据）
-- **Tracer Fire** ：（暂无数据）
-- **Buddy System** ：（暂无数据）
-- **Panic** ：（暂无数据）
 
 
 ---
@@ -255,7 +194,7 @@
 ### 🎲 综合流
 
 **阵容 1** 🥇 10连胜 · IsaacFTW
-> 双头巨锤 | 狮首手杖 | 猪疗膏 | 陷阱装置 | 腰带 | Prosperity | Property Mogul | Deadly Eye | Invigorating Cold | Quick Ignition | High Yield Investments | Backroom Dealings | Keen Eye
+> 双头巨锤 | 狮首手杖 | 猪疗膏 | 陷阱装置 | 腰带 | High Yield Investments
 > [查看详情](https://bazaardb.gg/run/ccfc2fdb-1c4e-440a-8b8b-1e322c5bde33)
 
 **📖 卡牌说明**
@@ -265,11 +204,4 @@
 - **猪疗膏** 🟦小：获得治疗，等量于本次旅途中你获得的金币
 - **陷阱装置** 🟧中：〔被动〕每场战斗中敌方首次使用物品时，冻结该物品及2/3/4件其他物品2秒。
 - **腰带** 🟧中：〔被动〕+50/75/100%最大生命值。
-- **Prosperity** ：（暂无数据）
-- **Property Mogul** ：（暂无数据）
-- **Deadly Eye** ：（暂无数据）
-- **Invigorating Cold** ：（暂无数据）
-- **Quick Ignition** ：（暂无数据）
 - **High Yield Investments** ：（暂无数据）
-- **Backroom Dealings** ：（暂无数据）
-- **Keen Eye** ：（暂无数据）

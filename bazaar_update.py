@@ -38,6 +38,23 @@ GITHUB_REPO_BARE = "github.com/samsonchen1989/TheBazaarClaw.git"
 REPO_DIR = "/tmp/TheBazaarClaw"
 
 # ──────────────────────────────
+# 加载 skills_db（用于过滤技能）
+# ──────────────────────────────
+def load_skills_db():
+    skills_path = os.path.join(WORKSPACE, "skills_db.json")
+    if not os.path.exists(skills_path):
+        print("[INFO] 下载 skills_db.json ...")
+        url = "https://raw.githubusercontent.com/Duangi/BazaarHelper/main/src-tauri/resources/skills_db.json"
+        subprocess.run(["curl", "-sL", "--max-time", "20", url, "-o", skills_path], capture_output=True)
+    if os.path.exists(skills_path):
+        with open(skills_path) as f:
+            skills = json.load(f)
+        return {s.get("name_en", "").strip() for s in skills}
+    return set()
+
+SKILL_NAMES: set = set()  # 延迟加载
+
+# ──────────────────────────────
 # 加载 items_db
 # ──────────────────────────────
 def load_items_db():
@@ -131,13 +148,13 @@ def parse_runs(page_text):
         hero_m = hero_re.search(before[-200:])  # hero abbrev 紧贴在 run 链接之前
         hero = hero_abbrev.get(hero_m.group(1), "Unknown") if hero_m else "Unknown"
 
-        # 卡牌在 after 中
+        # 卡牌在 after 中，过滤掉技能
         card_names_raw = card_pattern.findall(after)
         seen_cards = set()
         items = []
         for cn in card_names_raw:
             name = cn.replace("-", " ").replace("&#39;", "'")
-            if name not in seen_cards:
+            if name not in seen_cards and name not in SKILL_NAMES:
                 seen_cards.add(name)
                 items.append(name)
 
@@ -382,11 +399,13 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
 # 主流程
 # ──────────────────────────────
 def main():
+    global SKILL_NAMES
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始更新...")
 
-    # 1. 加载 items_db
+    # 1. 加载 items_db & skills_db
     item_index = load_items_db()
-    print(f"  items_db: {len(item_index)} 条物品数据")
+    SKILL_NAMES = load_skills_db()
+    print(f"  items_db: {len(item_index)} 条物品 | skills_db: {len(SKILL_NAMES)} 条技能（将被过滤）")
 
     # 2. 抓取最新对局
     print("  抓取 bazaardb.gg/run ...")
