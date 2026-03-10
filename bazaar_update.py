@@ -19,7 +19,9 @@ from datetime import datetime, timezone
 # ──────────────────────────────
 WORKSPACE = os.path.dirname(os.path.abspath(__file__))
 RUNS_FILE = os.path.join(WORKSPACE, "bazaar_runs.json")
-BUILDS_FILE = os.path.join(WORKSPACE, "bazaar_builds.md")
+BUILDS_FILE = os.path.join(WORKSPACE, "bazaar_builds.md")          # 汇总文件（保留向后兼容）
+BUILDS_DIR  = os.path.join(WORKSPACE, "builds")                      # 按英雄拆分的目录
+GITHUB_PUSH_STATE = os.path.join(WORKSPACE, ".github_push_state")    # 记录上次推送日期
 ITEMS_DB = "/tmp/items_db.json"
 ITEMS_DB_FALLBACK = os.path.join(WORKSPACE, "items_db.json")
 
@@ -63,6 +65,7 @@ def normalize(name: str) -> str:
 
 SKILL_NAMES: set = set()       # 延迟加载（原始名，带连字符）
 SKILL_NAMES_NORM: set = set()  # 归一化版本（全小写、去连字符）
+ITEM_NAMES_NORM: set = set()   # items_db 归一化白名单
 
 # ──────────────────────────────
 # 加载 items_db
@@ -158,16 +161,21 @@ def parse_runs(page_text):
         hero_m = hero_re.search(before[-200:])  # hero abbrev 紧贴在 run 链接之前
         hero = hero_abbrev.get(hero_m.group(1), "Unknown") if hero_m else "Unknown"
 
-        # 卡牌在 after 中，过滤掉技能（用归一化比较，解决连字符差异）
+        # 卡牌在 after 中，双重过滤：
+        # 1. 不在 skills_db 里（技能黑名单）
+        # 2. 在 items_db 里（物品白名单，比技能黑名单更可靠）
         card_names_raw = card_pattern.findall(after)
-        seen_cards = []   # 保留顺序，允许重复（重复卡牌正常出现）
-        seen_norm = set() # 只用于技能过滤判断，不用于去重
         items = []
         for cn in card_names_raw:
             name = cn.replace("-", " ").replace("&#39;", "'")
             name_n = normalize(name)
-            if name_n not in SKILL_NAMES_NORM:
-                items.append(name)
+            # 黑名单：跳过技能
+            if name_n in SKILL_NAMES_NORM:
+                continue
+            # 白名单：必须在 items_db 中（过滤掉页面上展示的技能卡）
+            if ITEM_NAMES_NORM and name_n not in ITEM_NAMES_NORM:
+                continue
+            items.append(name)
 
         if not items:
             continue
@@ -391,16 +399,60 @@ def auto_label(items, hero):
     return "🎲 混搭流"
 
 
-def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
-    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+def generate_hero_markdown(hero, clusters, item_index, total_runs, now_str):
+    """为单个英雄生成 Markdown 内容"""
+    hero_cn = HERO_CN.get(hero, hero)
     lines = []
-    lines.append("# 大巴扎（The Bazaar）构筑攻略")
-    lines.append(f"\n> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：{now}")
+    lines.append(f"# 大巴扎攻略 — {hero_cn}（{hero}）")
+    lines.append(f"\n> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：{now_str}")
     lines.append(f"> 累计收录对局：{total_runs} 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）")
     lines.append("> 每英雄最多 5 种流派，每流派最多 5 套阵容")
     lines.append("> **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库\n")
 
+    for genre_label, genre_runs in clusters:
+        lines.append(f"## {genre_label}\n")
+
+        for idx, r in enumerate(genre_runs, 1):
+            vmark = "🏆" if r["victory"] == "Perfect" else "🥇"
+            wins_str = f"{r.get('wins','?')}连胜"
+            board = " | ".join(get_cn(c, item_index) for c in r["items"])
+            lines.append(f"**阵容 {idx}** {vmark} {wins_str} · {r['player']}")
+            lines.append(f"> {board}")
+            lines.append(f"> [查看详情](https://bazaardb.gg/run/{r['run_id']})\n")
+
+        # 卡牌说明（去重保序）
+        seen_desc, all_cards_unique = set(), []
+        for r in genre_runs:
+            for c in r["items"]:
+                if c not in seen_desc:
+                    seen_desc.add(c)
+                    all_cards_unique.append(c)
+
+        lines.append("**📖 卡牌说明**\n")
+        for c in all_cards_unique:
+            cn = get_cn(c, item_index)
+            desc = get_full_desc(c, item_index)
+            badge = get_size_badge(c, item_index)
+            if desc:
+                lines.append(f"- **{cn}** {badge}：{desc}")
+            else:
+                lines.append(f"- **{cn}** {badge}：（暂无数据）")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
+    """生成所有英雄的 Markdown，写入各自文件，同时返回汇总内容（向后兼容）"""
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    os.makedirs(BUILDS_DIR, exist_ok=True)
+
     hero_order = ["Karnok", "Stelle", "Jules", "Mak", "Vanessa", "Duli", "Pygmalion"]
+    summary_lines = []
+    summary_lines.append("# 大巴扎（The Bazaar）构筑攻略汇总")
+    summary_lines.append(f"\n> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：{now}")
+    summary_lines.append(f"> 累计收录对局：{total_runs} 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）\n")
+
     for hero in hero_order:
         if hero not in clusters_by_hero:
             continue
@@ -409,52 +461,32 @@ def generate_markdown(clusters_by_hero, runs_dict, item_index, total_runs):
             continue
 
         hero_cn = HERO_CN.get(hero, hero)
-        lines.append(f"\n---\n\n## {hero_cn}（{hero}）\n")
+        # 写入单独文件
+        hero_md = generate_hero_markdown(hero, clusters, item_index, total_runs, now)
+        fname = f"builds_{hero.lower()}.md"
+        fpath = os.path.join(BUILDS_DIR, fname)
+        with open(fpath, "w") as f:
+            f.write(hero_md)
 
-        for genre_label, genre_runs in clusters:
-            lines.append(f"### {genre_label}\n")
+        # 汇总索引
+        summary_lines.append(f"- [{hero_cn}（{hero}）](./{fname})：{len(clusters)} 种流派")
 
-            for idx, r in enumerate(genre_runs, 1):
-                vmark = "🏆" if r["victory"] == "Perfect" else "🥇"
-                wins_str = f"{r.get('wins','?')}连胜"
-                board = " | ".join(get_cn(c, item_index) for c in r["items"])
-                lines.append(f"**阵容 {idx}** {vmark} {wins_str} · {r['player']}")
-                lines.append(f"> {board}")
-                lines.append(f"> [查看详情](https://bazaardb.gg/run/{r['run_id']})\n")
-
-            # 收集本流派全部卡牌（去重保序，只用于说明部分）
-            seen_desc, all_cards_unique = set(), []
-            for r in genre_runs:
-                for c in r["items"]:
-                    if c not in seen_desc:
-                        seen_desc.add(c)
-                        all_cards_unique.append(c)
-
-            lines.append("**📖 卡牌说明**\n")
-            for c in all_cards_unique:
-                cn = get_cn(c, item_index)
-                desc = get_full_desc(c, item_index)
-                badge = get_size_badge(c, item_index)
-                if desc:
-                    lines.append(f"- **{cn}** {badge}：{desc}")
-                else:
-                    lines.append(f"- **{cn}** {badge}：（暂无数据）")
-            lines.append("")
-
-    return "\n".join(lines)
+    summary_lines.append("")
+    return "\n".join(summary_lines)
 
 
 # ──────────────────────────────
 # 主流程
 # ──────────────────────────────
 def main():
-    global SKILL_NAMES, SKILL_NAMES_NORM
+    global SKILL_NAMES, SKILL_NAMES_NORM, ITEM_NAMES_NORM
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始更新...")
 
     # 1. 加载 items_db & skills_db
     item_index = load_items_db()
     SKILL_NAMES = load_skills_db()
     SKILL_NAMES_NORM = {normalize(s) for s in SKILL_NAMES}
+    ITEM_NAMES_NORM = {normalize(name) for name in item_index.keys()}
     print(f"  items_db: {len(item_index)} 条物品 | skills_db: {len(SKILL_NAMES)} 条技能（将被过滤）")
 
     # 2. 抓取最新对局
@@ -490,10 +522,32 @@ def main():
     return added, len(local_runs)
 
 
-def push_to_github(added: int):
-    """把最新文件同步推送到 GitHub"""
+def should_push_today():
+    """判断今天是否已推送过，返回 True 表示需要推送"""
+    today = datetime.now().strftime("%Y-%m-%d")
+    if os.path.exists(GITHUB_PUSH_STATE):
+        with open(GITHUB_PUSH_STATE) as f:
+            last = f.read().strip()
+        if last == today:
+            return False
+    return True
+
+
+def mark_pushed():
+    """记录今天已推送"""
+    today = datetime.now().strftime("%Y-%m-%d")
+    with open(GITHUB_PUSH_STATE, "w") as f:
+        f.write(today)
+
+
+def push_to_github(added: int, force: bool = False):
+    """把最新文件同步推送到 GitHub（默认每天最多一次）"""
     if not GITHUB_TOKEN:
         print("  GitHub: 未配置 token，跳过推送")
+        return
+
+    if not force and not should_push_today():
+        print("  GitHub: 今日已推送，跳过（每天一次）")
         return
 
     repo_url = f"https://{GITHUB_TOKEN}@{GITHUB_REPO_BARE}"
@@ -504,17 +558,18 @@ def push_to_github(added: int):
         subprocess.run(["git", "config", "user.email", "samsonschen@users.noreply.github.com"], cwd=REPO_DIR, capture_output=True)
         subprocess.run(["git", "config", "user.name", "samsonschen"], cwd=REPO_DIR, capture_output=True)
     else:
-        # 拉取前先更新 remote url（token 可能刷新）
         subprocess.run(["git", "remote", "set-url", "origin", repo_url], cwd=REPO_DIR, capture_output=True)
         subprocess.run(["git", "pull", "--rebase"], cwd=REPO_DIR, capture_output=True)
 
-    # 复制最新文件（不包含 .env）
     import shutil
+
+    # 复制主文件
     for fname in ["bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py"]:
         src = os.path.join(WORKSPACE, fname)
         if os.path.exists(src):
             shutil.copy2(src, REPO_DIR)
-    # 数据库文件
+
+    # 复制数据库文件
     for src_path, fname in [
         ("/tmp/items_db.json",                      "items_db.json"),
         (os.path.join(WORKSPACE, "skills_db.json"), "skills_db.json"),
@@ -522,9 +577,17 @@ def push_to_github(added: int):
         if os.path.exists(src_path):
             shutil.copy2(src_path, os.path.join(REPO_DIR, fname))
 
+    # 复制按英雄拆分的 builds/ 目录
+    repo_builds = os.path.join(REPO_DIR, "builds")
+    os.makedirs(repo_builds, exist_ok=True)
+    if os.path.exists(BUILDS_DIR):
+        for fname in os.listdir(BUILDS_DIR):
+            if fname.endswith(".md"):
+                shutil.copy2(os.path.join(BUILDS_DIR, fname), os.path.join(repo_builds, fname))
+
     subprocess.run(
         ["git", "add", "bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py",
-         "items_db.json", "skills_db.json"],
+         "items_db.json", "skills_db.json", "builds/"],
         cwd=REPO_DIR, capture_output=True
     )
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -536,6 +599,7 @@ def push_to_github(added: int):
     r2 = subprocess.run(["git", "push", "origin", "main"], cwd=REPO_DIR, capture_output=True, text=True)
     if r2.returncode == 0:
         print(f"  GitHub: 推送成功 → https://{GITHUB_REPO_BARE}")
+        mark_pushed()
     else:
         print(f"  GitHub: 推送失败 {r2.stderr[:200]}")
 
@@ -543,14 +607,18 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="大巴扎构筑攻略更新工具")
     parser.add_argument("--fetch", action="store_true", help="抓取新对局并更新攻略文档")
-    parser.add_argument("--push",  action="store_true", help="将本地数据推送到 GitHub")
+    parser.add_argument("--push",  action="store_true", help="将本地数据推送到 GitHub（每天一次）")
+    parser.add_argument("--force-push", action="store_true", help="强制推送到 GitHub（忽略频率限制）")
     args = parser.parse_args()
 
     if args.fetch:
-        main()
+        added, total = main()
+        # fetch 后顺带检查是否该推送（每天一次）
+        push_to_github(added)
     elif args.push:
-        # push 模式：只做 GitHub 同步，不抓取（items_db/skills_db 会在 push_to_github 里一起复制）
         push_to_github(added=0)
+    elif args.force_push:
+        push_to_github(added=0, force=True)
     else:
         # 默认：两件都做（向后兼容）
         added, _ = main()
