@@ -508,11 +508,10 @@ def main():
     # 4. 聚类分析
     clusters_by_hero = cluster_runs_by_hero(local_runs)
 
-    # 5. 生成文档
-    md = generate_markdown(clusters_by_hero, local_runs, item_index, len(local_runs))
-    with open(BUILDS_FILE, "w") as f:
-        f.write(md)
-    print(f"  攻略文档已更新：{BUILDS_FILE} ({len(md)} 字符)")
+    # 5. 生成文档（按英雄拆分写入 builds/ 目录）
+    generate_markdown(clusters_by_hero, local_runs, item_index, len(local_runs))
+    hero_files = [f for f in os.listdir(BUILDS_DIR) if f.endswith(".md")]
+    print(f"  攻略文档已更新：builds/ 目录，共 {len(hero_files)} 个英雄文件")
 
     # 打印各英雄对局数
     hero_counts = Counter(r["hero"] for r in local_runs.values())
@@ -563,8 +562,8 @@ def push_to_github(added: int, force: bool = False):
 
     import shutil
 
-    # 复制主文件
-    for fname in ["bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py"]:
+    # 复制主文件（不再包含 bazaar_builds.md）
+    for fname in ["bazaar_runs.json", "bazaar_update.py"]:
         src = os.path.join(WORKSPACE, fname)
         if os.path.exists(src):
             shutil.copy2(src, REPO_DIR)
@@ -586,8 +585,8 @@ def push_to_github(added: int, force: bool = False):
                 shutil.copy2(os.path.join(BUILDS_DIR, fname), os.path.join(repo_builds, fname))
 
     subprocess.run(
-        ["git", "add", "bazaar_builds.md", "bazaar_runs.json", "bazaar_update.py",
-         "items_db.json", "skills_db.json", "builds/"],
+        ["git", "add", "bazaar_runs.json", "bazaar_update.py",
+         "items_db.json", "skills_db.json", "builds/", "README.md"],
         cwd=REPO_DIR, capture_output=True
     )
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
