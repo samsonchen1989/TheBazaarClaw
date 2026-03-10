@@ -95,11 +95,26 @@ def load_items_db():
 def fetch_runs_page():
     """用 jina reader 抓取页面内容"""
     url = "https://r.jina.ai/https://bazaardb.gg/run"
-    r = subprocess.run(
-        ["curl", "-sL", "--max-time", "30", url],
-        capture_output=True, text=True
-    )
-    return r.stdout if r.returncode == 0 else ""
+    print(f"抓取URL: {url}")
+    try:
+        r = subprocess.run(
+            ["curl", "-sL", "--max-time", "120", "--retry", "3", url],
+            capture_output=True, text=True
+        )
+        print(f"Curl返回码: {r.returncode}, 输出长度: {len(r.stdout)}")
+        
+        if r.returncode != 0:
+            print(f"Curl错误: {r.stderr[:200]}")
+            return ""
+            
+        if len(r.stdout) < 100:
+            print(f"输出过短，可能是错误页面: {r.stdout[:500]}")
+            return ""
+            
+        return r.stdout
+    except Exception as e:
+        print(f"抓取过程中发生异常: {e}")
+        return ""
 
 def parse_runs(page_text):
     """从页面文本解析对局列表"""
@@ -161,10 +176,24 @@ def parse_runs(page_text):
         hero_m = hero_re.search(before[-200:])  # hero abbrev 紧贴在 run 链接之前
         hero = hero_abbrev.get(hero_m.group(1), "Unknown") if hero_m else "Unknown"
 
-        # 卡牌在 after 中，双重过滤：
-        # 1. 不在 skills_db 里（技能黑名单）
-        # 2. 在 items_db 里（物品白名单，比技能黑名单更可靠）
-        card_names_raw = card_pattern.findall(after)
+        # 卡牌在 after 中，页面结构：
+        #   [N wins ...](run_url)\n\n0\n\n[![截图alt](截图url)](run_url)\n\n第一行物品\n\n第二行技能\n\n下一条对局
+        # 关键：只取截图链接（含url）之后、第一个 \n\n 之前的内容（即第一行物品，不包含技能行）
+        screenshot_full_pat = re.compile(
+            r'\[!\[[^\]]*screenshot[^\]]*\]\([^)]+\)\]\([^)]+\)'
+        )
+        shot_m = screenshot_full_pat.search(after)
+        if shot_m:
+            after_shot = after[shot_m.end():].lstrip('\n')  # 跳过截图后的空行
+            first_line_end = after_shot.find('\n\n')
+            if first_line_end != -1:
+                first_line = after_shot[:first_line_end]
+            else:
+                first_line = after_shot
+        else:
+            first_line = after
+
+        card_names_raw = card_pattern.findall(first_line)
         items = []
         for cn in card_names_raw:
             name = cn.replace("-", " ").replace("&#39;", "'")
@@ -172,7 +201,7 @@ def parse_runs(page_text):
             # 黑名单：跳过技能
             if name_n in SKILL_NAMES_NORM:
                 continue
-            # 白名单：必须在 items_db 中（过滤掉页面上展示的技能卡）
+            # 白名单：必须在 items_db 中
             if ITEM_NAMES_NORM and name_n not in ITEM_NAMES_NORM:
                 continue
             items.append(name)
