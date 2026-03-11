@@ -1,7 +1,7 @@
 # 大巴扎攻略 — 卡诺克（Karnok）
 
-> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-11 03:00
-> 累计收录对局：539 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
+> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-12 05:05
+> 累计收录对局：796 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
 > 每英雄最多 5 种流派，每流派最多 5 套阵容
 > **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库
 
