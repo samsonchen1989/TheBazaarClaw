@@ -1,7 +1,7 @@
 # 大巴扎攻略 — 瓦内莎（Vanessa）
 
-> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-14 00:30
-> 累计收录对局：972 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
+> 来源：[bazaardb.gg/run](https://bazaardb.gg/run)  |  更新：2026-03-15 02:42
+> 累计收录对局：1122 场（仅 🥇 黄金 / 🏆 完美胜利，胜场 ≥ 8）
 > 每英雄最多 5 种流派，每流派最多 5 套阵容
 > **卡牌说明**：来源 [BazaarHelper](https://github.com/Duangi/BazaarHelper) 数据库
 
