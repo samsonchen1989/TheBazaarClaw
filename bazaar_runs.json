@@ -18234,5 +18234,2192 @@
       "Forest Cloak"
     ],
     "fetched_at": "2026-03-14T18:42:57.805804+00:00"
+  },
+  {
+    "run_id": "0eb785ba-575d-40f8-bf48-524d00314482",
+    "player": "altr",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Bread Knife",
+      "Vitality Potion",
+      "Korxena Crest",
+      "Micro Mach",
+      "Farmer's Market",
+      "Laurel's Fortress"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823462+00:00"
+  },
+  {
+    "run_id": "6bd6a634-3b5f-4340-a29e-d9b7d6a4b443",
+    "player": "Baxter",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Seadog's Saloon",
+      "Pesky Pete",
+      "Pesky Pete",
+      "Zoarcid",
+      "Fire Claw",
+      "Oni Mask"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823517+00:00"
+  },
+  {
+    "run_id": "2ce4942e-bc06-47e8-b592-c002a4a1fc2b",
+    "player": "Bunzo",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Healing Draught",
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Hunter's Boots",
+      "Runic Potion",
+      "Hunter's Pack"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823546+00:00"
+  },
+  {
+    "run_id": "2d6ab390-b3e8-4e30-b3c9-2d686037ddc4",
+    "player": "Herex",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Burn Scar",
+      "Firefly Lantern",
+      "Flying Squirrel",
+      "Signal Fire",
+      "Dryad",
+      "Tinderbox",
+      "Torch"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823596+00:00"
+  },
+  {
+    "run_id": "5eff1b2e-9f3e-48d2-8fc2-096371789d4b",
+    "player": "mtdyo",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Excavation Tools",
+      "Idol of Decay",
+      "Smelling Salts",
+      "Soulstone",
+      "Palanquin",
+      "Soulstone",
+      "Sapphire"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823624+00:00"
+  },
+  {
+    "run_id": "d248a053-40ae-4cb4-a81e-14e577202753",
+    "player": "NootNoodle",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Soul of the District",
+      "Hunter's Boots",
+      "Night Vision",
+      "Fogshroom",
+      "Chains",
+      "Fairy Circle"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823650+00:00"
+  },
+  {
+    "run_id": "edb752ee-6404-41d7-aee3-79a2832d1bf0",
+    "player": "L-ink",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Launcher Core",
+      "Levitation Pad",
+      "Beta Ray",
+      "Bat",
+      "Metronome",
+      "Combat Core",
+      "Radar Module"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823698+00:00"
+  },
+  {
+    "run_id": "751e0148-4db1-4b7c-85bc-a4dba028cb36",
+    "player": "CoolChiz",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fogshroom",
+      "Snowshoes",
+      "Chains",
+      "Night Vision",
+      "Bear Trap",
+      "Tent",
+      "Dishwasher"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823722+00:00"
+  },
+  {
+    "run_id": "67bc0bd1-4af6-4d74-b37c-04b1220fa2a4",
+    "player": "waaai",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Hidden Lake",
+      "Wild Bear",
+      "Beast Call",
+      "Flying Squirrel",
+      "Hunting Hawk",
+      "Trail Markers"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823745+00:00"
+  },
+  {
+    "run_id": "2612032f-0cfc-47b7-b79a-200dfbc39142",
+    "player": "MegaCharizard",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Seashadow",
+      "Rowboat",
+      "The Boulder",
+      "Shipwreck"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823797+00:00"
+  },
+  {
+    "run_id": "a7e942fd-0444-4430-9f9c-2171d97d9396",
+    "player": "Eywon",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Kinetic Cannon",
+      "Levitation Pad",
+      "Primal Core",
+      "SMG",
+      "Dinosawer",
+      "Metronome",
+      "Dinosawer"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823852+00:00"
+  },
+  {
+    "run_id": "869232ca-de16-4617-8df6-3041c7d7186a",
+    "player": "M4nue",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Hunting Hawk",
+      "Beast Call",
+      "Bat",
+      "Spear",
+      "Night Vision",
+      "Wolf",
+      "Chains"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823883+00:00"
+  },
+  {
+    "run_id": "b3fc0f81-ce30-4d8c-9b02-9fe833203b70",
+    "player": "filbert",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Hunting Hawk",
+      "Night Vision",
+      "Flying Squirrel",
+      "Giant Sling",
+      "Beast Tooth",
+      "Wing Sigil"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823905+00:00"
+  },
+  {
+    "run_id": "3b80ea01-4e22-427f-9792-cb21fce2c83f",
+    "player": "PotatoServer",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Monitor Lizard",
+      "Fiber Optics",
+      "Integrated HUD",
+      "Dooltron",
+      "Pylon"
+    ],
+    "fetched_at": "2026-03-15T01:46:06.823926+00:00"
+  },
+  {
+    "run_id": "79cf377e-a067-4a08-be83-8cc46c60fb52",
+    "player": "L-ink",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Coolant",
+      "Party Float",
+      "Terry Dactyl",
+      "Launcher Core",
+      "Thrusters"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.433873+00:00"
+  },
+  {
+    "run_id": "1a16520c-f3ef-4cb5-aea9-d8c035b2cbc6",
+    "player": "naswing",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "SMG",
+      "Incendiary Rounds",
+      "Nitro",
+      "Nitro",
+      "Metronome",
+      "The Core",
+      "Remote Control",
+      "Plasma Rifle"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.433942+00:00"
+  },
+  {
+    "run_id": "c9b18595-3150-4cc2-b77b-7d33db9e0904",
+    "player": "Antar",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Orange Piggles R",
+      "Hammock",
+      "Orange Piggles R",
+      "Shadowed Cloak",
+      "Atlatl",
+      "Textiles"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.433974+00:00"
+  },
+  {
+    "run_id": "e8747b6d-772e-483e-944e-4fe2b7c50b08",
+    "player": "usoup",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Power Sander",
+      "Lens",
+      "Nitro",
+      "Coffee",
+      "Wildroot Amulet",
+      "Critical Core",
+      "Kinetic Cannon"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434006+00:00"
+  },
+  {
+    "run_id": "12934399-dd7c-43ce-a2f5-c757d9d35fa1",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Zarlic",
+      "Spice Rack",
+      "Burrito",
+      "Sorbet",
+      "Serving Platter",
+      "Sorbet",
+      "Caviar"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434039+00:00"
+  },
+  {
+    "run_id": "f1625433-7dc8-4d8a-8736-8c37a21d3dce",
+    "player": "GGam",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Pillbuggy",
+      "Goggles",
+      "Multitool",
+      "Radar Dome",
+      "Sirens",
+      "Flycycle"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434107+00:00"
+  },
+  {
+    "run_id": "621b7f5d-2c77-453f-9134-32be415287d1",
+    "player": "twelvee",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Bat",
+      "Remote Control",
+      "Coolant",
+      "Ice 9000",
+      "Cryosphere",
+      "Launcher Core",
+      "Levitation Pad"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434132+00:00"
+  },
+  {
+    "run_id": "5966b38a-3526-4d6e-8d5c-b7f6bc7edd15",
+    "player": "Hammerschnzt",
+    "hero": "Jules",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Instant Noodles",
+      "Ice Cubes",
+      "Honeycomb",
+      "Black Pepper",
+      "Fruit Press",
+      "Coffee",
+      "Oven"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434157+00:00"
+  },
+  {
+    "run_id": "e6c565bc-130e-4cff-b72d-7d03ca8df8ef",
+    "player": "rocksheep",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Wild Bear",
+      "Goggles",
+      "Hunting Hawk",
+      "Messenger Sparrow",
+      "Messenger Sparrow",
+      "Vengeful Sigil"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434182+00:00"
+  },
+  {
+    "run_id": "84b7662b-bf15-4c77-83cd-a2f1204b8db7",
+    "player": "rackgool",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Snowshoes",
+      "Anaconda",
+      "Beast Tooth",
+      "Snow Wisp",
+      "Trail Markers",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434208+00:00"
+  },
+  {
+    "run_id": "be830b24-ceac-407e-9659-f9d2335f193d",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Hunting Hawk",
+      "Messenger Sparrow",
+      "Flying Squirrel",
+      "Hunter's Boots",
+      "Heavy Crossbow",
+      "Night Vision",
+      "Fogshroom"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434232+00:00"
+  },
+  {
+    "run_id": "ec2b687d-a08e-4142-8863-ff1df60e46d5",
+    "player": "mememachine",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Succulents",
+      "Textiles",
+      "Coincure",
+      "Luxury Tents",
+      "Uwashiwali Bird",
+      "Crystal Bonsai"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434255+00:00"
+  },
+  {
+    "run_id": "9c3bf224-86d1-4f81-a409-99fd32d347b7",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Caviar",
+      "Black Pepper",
+      "Pizza",
+      "Spice Rack",
+      "Burrito",
+      "Hot Sauce",
+      "Zarlic"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434278+00:00"
+  },
+  {
+    "run_id": "0e337636-55fa-449b-95c8-83db102526e1",
+    "player": "Museong",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Sorbet",
+      "Blender",
+      "Frost Potion",
+      "Sorbet",
+      "Sorbet",
+      "Freezer",
+      "Slushee"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434301+00:00"
+  },
+  {
+    "run_id": "0c024bbf-c5c1-49f5-b369-35ce95642a84",
+    "player": "MiyoGrevin",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Double Whammy",
+      "Forest Cloak",
+      "Booby Trap",
+      "Belt"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434321+00:00"
+  },
+  {
+    "run_id": "f26d29c0-4257-4192-b41b-59bb0f8c3f9e",
+    "player": "L-ink",
+    "hero": "Duli",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Launcher Core",
+      "Thrusters",
+      "Ice 9000",
+      "Robotic Factory",
+      "Snow Wisp",
+      "First Aiden"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434343+00:00"
+  },
+  {
+    "run_id": "962d157c-cd58-4799-9a56-52263bd00bfc",
+    "player": "Baxter",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Sharkray",
+      "Zoarcid",
+      "Pesky Pete",
+      "Piranha",
+      "Piranha",
+      "Vampire Squid",
+      "Narwhal",
+      "Fang",
+      "Holsters"
+    ],
+    "fetched_at": "2026-03-15T02:47:09.434370+00:00"
+  },
+  {
+    "run_id": "d2448fd3-4fff-4451-b021-4f357487de0e",
+    "player": "kx4n",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Pawn Shop",
+      "Flying Squirrel",
+      "Wild Bear",
+      "Snowshoes",
+      "Great Eagle"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472535+00:00"
+  },
+  {
+    "run_id": "58e5a6fa-1a5e-442b-ba64-5c73121ac3f6",
+    "player": "Classy",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Dishwasher",
+      "Flying Squirrel",
+      "Giant Sling",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472652+00:00"
+  },
+  {
+    "run_id": "046f6511-1c9e-4a3e-9c74-274571fe909c",
+    "player": "zxcvbnmzxcv",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Nesting Doll",
+      "Piano",
+      "Cauterizing Blade",
+      "Zoarcid",
+      "Jellyfish",
+      "Narwhal",
+      "Sharkray"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472702+00:00"
+  },
+  {
+    "run_id": "4186e27d-82ff-4a3d-b80b-1403bd627afd",
+    "player": "yoohom",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Cookbook",
+      "Pizza Cutter",
+      "Giant Lollipop",
+      "Bread Knife",
+      "Dishwasher"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472724+00:00"
+  },
+  {
+    "run_id": "6dcb8ea4-f6b6-4f36-9c94-1db2c5c791e8",
+    "player": "Veeto",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Potion Distillery",
+      "Caustic Solvent",
+      "Hourglass",
+      "Frost Potion",
+      "Caustic Solvent",
+      "Flying Potion",
+      "Atmospheric Sampler"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472750+00:00"
+  },
+  {
+    "run_id": "05dc2536-e893-46a0-8fc0-17357b11a1ba",
+    "player": "CHARIBO",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Sharkray",
+      "Seadog's Saloon",
+      "Jellyfish",
+      "Piranha",
+      "Piranha",
+      "Old Saltclaw",
+      "Narwhal"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472790+00:00"
+  },
+  {
+    "run_id": "2799725f-0a52-403c-8a93-3d7d31570d56",
+    "player": "OnlyDance",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Icicle",
+      "Cog",
+      "YLW M4NT1S",
+      "BLK SP1D3R",
+      "Robotic Factory",
+      "Dooltron"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472814+00:00"
+  },
+  {
+    "run_id": "2e440d2b-013b-4a84-b928-1e3dc31b431a",
+    "player": "Zerwine",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Regal Blade",
+      "Belt",
+      "Windmill",
+      "Keychain",
+      "Gramophone"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472836+00:00"
+  },
+  {
+    "run_id": "24b26c9c-e977-48e9-950c-c3b69fc45670",
+    "player": "1323",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Textiles",
+      "Silk Scarf",
+      "Gramophone",
+      "Spiky Shield",
+      "Sauna"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472856+00:00"
+  },
+  {
+    "run_id": "4fc3f288-a1f8-459a-9bbc-9dbf600a9095",
+    "player": "leno",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fairy Circle",
+      "Tent",
+      "Shotgun",
+      "Night Vision",
+      "Chains",
+      "Chains"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472878+00:00"
+  },
+  {
+    "run_id": "3c1e5493-504a-474f-8f67-dd752626304d",
+    "player": "1323",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Double Whammy",
+      "Gramophone",
+      "Booby Trap",
+      "Belt",
+      "Battery"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472902+00:00"
+  },
+  {
+    "run_id": "ecc677d9-eec1-412f-8437-f909f3fcba4f",
+    "player": "1323",
+    "hero": "Pygmalion",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Belt",
+      "Regal Blade",
+      "Regal Blade",
+      "Lion Cane",
+      "Coffee"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472922+00:00"
+  },
+  {
+    "run_id": "84f9c8cc-65c3-4c9a-94d2-f79beae0bc44",
+    "player": "Gilliam",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Aurora Vista",
+      "Meat",
+      "Snow Wisp",
+      "Snow Wisp",
+      "Snow Wisp",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472942+00:00"
+  },
+  {
+    "run_id": "90130c7c-0597-4831-8cb2-90a4a87441ef",
+    "player": "1323",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Belt",
+      "Keychain",
+      "Temporal Navigator",
+      "Lion Cane",
+      "Windmill"
+    ],
+    "fetched_at": "2026-03-15T04:47:55.472962+00:00"
+  },
+  {
+    "run_id": "7a179a3e-cf1f-4c01-9d52-1742255b0e76",
+    "player": "papyruszz",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Hunting Hawk",
+      "Pocket Knife",
+      "Rope",
+      "Vengeful Sigil"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814534+00:00"
+  },
+  {
+    "run_id": "f0823f07-b2d6-41fd-bc6e-f1dc69003344",
+    "player": "LettreHumain",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Dishwasher",
+      "Food Truck",
+      "Giant Lollipop",
+      "Coffee"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814637+00:00"
+  },
+  {
+    "run_id": "f31a7c24-d0a2-436f-bedc-be09931a9cab",
+    "player": "Azarea",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Luxury Tents",
+      "Instant Noodles",
+      "Spice Rack",
+      "Quicksilver",
+      "Grill"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814662+00:00"
+  },
+  {
+    "run_id": "eacabced-0429-4b67-b822-f034e6a57b43",
+    "player": "coralkitty2",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Micro Mach",
+      "Steam Washer",
+      "BLK SP1D3R",
+      "Soldering Gun",
+      "Pressure Heater",
+      "Steam Washer",
+      "Smoke Detector"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814687+00:00"
+  },
+  {
+    "run_id": "dceec438-f56e-46a7-983b-133cde75295e",
+    "player": "(Anonymous)",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fang",
+      "Test Subject Alpha",
+      "Disintegration Ray",
+      "Infused Bracers",
+      "Basilisk Fang",
+      "Floor Spike"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814713+00:00"
+  },
+  {
+    "run_id": "485b43d2-d479-4191-9ce3-4c3ab1f22f5b",
+    "player": "REN",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Plasma Grenade",
+      "Pylon",
+      "Pylon",
+      "Dooltron"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814733+00:00"
+  },
+  {
+    "run_id": "4ffc2df2-13db-4712-a6fe-45aeb17791d7",
+    "player": "L14716",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Veggie Garden",
+      "Bread Knife",
+      "Basket",
+      "Farmer's Market",
+      "Strawberries"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814800+00:00"
+  },
+  {
+    "run_id": "5592fd4b-f308-492b-b89e-0e5c8e6f8475",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Butter",
+      "Ice Cubes",
+      "Hot Sauce",
+      "Spice Rack",
+      "Burrito",
+      "Meat Tenderizer",
+      "Black Pepper",
+      "Knife Sharpener"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814830+00:00"
+  },
+  {
+    "run_id": "9f90fc10-2eec-4b47-9aa1-ca1dec0032a5",
+    "player": "H4chimi",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Regal Blade",
+      "Regal Blade",
+      "Gramophone",
+      "Belt",
+      "Booby Trap"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814852+00:00"
+  },
+  {
+    "run_id": "62623133-ae7f-4744-9f42-e8b5b9c21158",
+    "player": "sg4e",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Drowsdrop",
+      "Flying Squirrel",
+      "Hunter's Sled",
+      "Yo Yo",
+      "Firefly Lantern",
+      "Snow Wisp",
+      "Black Mamba",
+      "Frog Hollow"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814880+00:00"
+  },
+  {
+    "run_id": "b3b5e156-d4da-4c8f-a564-f12409cee7d8",
+    "player": "A23F",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Eagle Sigil",
+      "Outlands Terror",
+      "Hunting Hawk"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814927+00:00"
+  },
+  {
+    "run_id": "c8706bff-3f35-4830-b4ed-4cd6bacfeeef",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Trail Mix",
+      "Zarlic",
+      "Butter",
+      "Basket",
+      "Caviar",
+      "Knife Sharpener",
+      "Fruit Press",
+      "Coffee"
+    ],
+    "fetched_at": "2026-03-15T05:48:50.814975+00:00"
+  },
+  {
+    "run_id": "592aa691-1b38-4a3e-a93d-e6ceaaf128fd",
+    "player": "REN",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fang",
+      "Pastry Cart",
+      "Launcher Core",
+      "Remote Control",
+      "Ice 9000",
+      "Fiber Optics"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509050+00:00"
+  },
+  {
+    "run_id": "e1dadeb9-4804-4db5-bca5-3c4bbeec2cfc",
+    "player": "(Anonymous)",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Momma Saur",
+      "Red Button",
+      "Unstable Grav Well",
+      "Tractor Beam",
+      "Antimatter Chamber"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509105+00:00"
+  },
+  {
+    "run_id": "985317ce-b812-453f-932c-0af1e7411077",
+    "player": "papyruszz",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fairy Circle",
+      "Spices",
+      "Battery",
+      "Fogshroom",
+      "Silver Stake",
+      "Runed Bracelet",
+      "Flare",
+      "Chains"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509139+00:00"
+  },
+  {
+    "run_id": "ccd92f89-dec0-48db-acd2-77836e4a776a",
+    "player": "gocks",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "BLK SP1D3R",
+      "Pylon",
+      "RED F1R3FLY",
+      "Ignition Core",
+      "Hologram Projector",
+      "Launch Pad"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509167+00:00"
+  },
+  {
+    "run_id": "cfdaa569-3786-43c8-9cdc-1e322d1deb51",
+    "player": "74K",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Giant Sling",
+      "Beast Tooth",
+      "Hunting Hawk",
+      "Hunting Knife",
+      "Hunter's Journal",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509197+00:00"
+  },
+  {
+    "run_id": "329fe1f1-2fda-4e2c-9c28-7bce22d728bc",
+    "player": "filbert",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Giant Sling",
+      "Beast Tooth",
+      "Pocket Knife",
+      "Flare",
+      "Adrenaline Shot",
+      "Machete",
+      "Warpaint"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509227+00:00"
+  },
+  {
+    "run_id": "97f18e79-4c47-45d5-8011-1592532ebd24",
+    "player": "airing",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Giant Sling",
+      "Beast Tooth",
+      "Outlands Terror",
+      "Wolf Mask"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509248+00:00"
+  },
+  {
+    "run_id": "e77412a9-7d75-4bf5-b5cc-22b3cedae9b9",
+    "player": "Boatlnwza6969",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Meat",
+      "Snow Wisp",
+      "Flying Squirrel",
+      "Firefly Lantern",
+      "Tinderbox",
+      "Burn Scar",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509274+00:00"
+  },
+  {
+    "run_id": "46eb9c78-5020-4948-9f4b-0e3da81d59b7",
+    "player": "card_enjoyer",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "The Boulder",
+      "Diving Helmet",
+      "Seashadow",
+      "Dive Weights",
+      "Pufferfish"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509294+00:00"
+  },
+  {
+    "run_id": "346f7017-6643-47b7-aa90-435fa2b2da98",
+    "player": "Steoan",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Ornithopter",
+      "Aerial Turret",
+      "Stellar Swallowtail",
+      "Radar Dome",
+      "Headset"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509316+00:00"
+  },
+  {
+    "run_id": "836e2dec-5f73-4d73-9019-ed8fcb23fc0c",
+    "player": "DDOSvoid",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Chains",
+      "Fogshroom",
+      "Night Vision",
+      "Shotgun",
+      "Tent",
+      "Fairy Circle"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509341+00:00"
+  },
+  {
+    "run_id": "4a61e4bc-f13f-4481-9c3c-2858e4203f51",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Wild Boar",
+      "Stretch Pants",
+      "Anaconda"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509385+00:00"
+  },
+  {
+    "run_id": "c8e06e75-1d41-41d0-8757-f98c421e4de3",
+    "player": "linggangu",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Hunting Hawk",
+      "Messenger Sparrow",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509404+00:00"
+  },
+  {
+    "run_id": "e4c94a1b-21bc-435c-bd49-44eaa21456f8",
+    "player": "(Anonymous)",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Eagle Sigil",
+      "Tortuga",
+      "Hunting Hawk"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509423+00:00"
+  },
+  {
+    "run_id": "21fdec81-34ef-4fb2-a1c8-03f5c019c3e0",
+    "player": "(Anonymous)",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Plague Glaive",
+      "Floor Spike",
+      "Spider Mace",
+      "Friendly Doll",
+      "Basilisk Fang",
+      "Poppy Field"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509492+00:00"
+  },
+  {
+    "run_id": "cb98944b-fe4a-4bb5-908d-dfb41125eeca",
+    "player": "yezhu",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Anaconda",
+      "Eagle Sigil",
+      "Outlands Terror",
+      "Hunting Hawk"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509511+00:00"
+  },
+  {
+    "run_id": "dda122c4-b7ad-4109-961a-de66a7711a0b",
+    "player": "Yyyyjy",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Bunker",
+      "Harmadillo",
+      "Armored Core",
+      "Party Float"
+    ],
+    "fetched_at": "2026-03-15T06:49:34.509528+00:00"
+  },
+  {
+    "run_id": "8eda79b7-fc3e-447c-8cf5-e7c3d4afb67a",
+    "player": "REN",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Plasma Grenade",
+      "Amber",
+      "Pylon",
+      "Dooltron",
+      "Dino Saddle"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740566+00:00"
+  },
+  {
+    "run_id": "f7d7b67b-a6fb-4c28-a70c-929eacd4c662",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Runic Claymore",
+      "Runed Bracelet",
+      "Messenger Sparrow",
+      "Hunting Hawk",
+      "Great Eagle"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740618+00:00"
+  },
+  {
+    "run_id": "bae5c40e-b88e-43d2-8a96-8517e2ef3e14",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Hunting Hawk",
+      "Flying Squirrel",
+      "Anaconda",
+      "Thrusters"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740646+00:00"
+  },
+  {
+    "run_id": "0b200f1f-9ec0-43b3-8c41-4df519499a95",
+    "player": "Amicus",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Caviar",
+      "Hot Sauce",
+      "Spice Rack",
+      "Pizza",
+      "Corkscrew",
+      "Pantry"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740674+00:00"
+  },
+  {
+    "run_id": "241f7af4-1677-48c7-aac3-858dcb0a41b1",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Hidden Lake",
+      "Hunting Hawk",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740697+00:00"
+  },
+  {
+    "run_id": "739f13de-fa3b-4be7-87e9-144b4aa27bb6",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Eagle Sigil",
+      "Giant Sling",
+      "Beast Tooth",
+      "Hunting Hawk",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740721+00:00"
+  },
+  {
+    "run_id": "9bd2246f-f9e8-454c-9fd7-6e3dc94f37e7",
+    "player": "melffy_",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Shipwreck",
+      "Tranquilizer Dart",
+      "Darkwater Anglerfish",
+      "Zoarcid",
+      "Piranha",
+      "Burn Scar"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740746+00:00"
+  },
+  {
+    "run_id": "d2399492-baf6-4cba-b713-ce3a7c6a1a9d",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Runic Claymore",
+      "Hidden Lake",
+      "Hunting Hawk",
+      "Pocket Knife"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740779+00:00"
+  },
+  {
+    "run_id": "65b5397f-b656-4cfa-9c7a-752da5150c88",
+    "player": "debussy",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Bunker",
+      "Harmadillo",
+      "Dooltron"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740804+00:00"
+  },
+  {
+    "run_id": "b63c9430-2452-48f3-a652-20430a0f01a4",
+    "player": "YolozBaku",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Abacus",
+      "Skyscraper",
+      "Gramophone",
+      "Keychain",
+      "Regal Blade"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740827+00:00"
+  },
+  {
+    "run_id": "c670ab7e-1a6d-4a04-8d24-4df9d71548d0",
+    "player": "QIIING",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Worry Wart",
+      "Night Vision",
+      "Fogshroom",
+      "Bladed Armor",
+      "Hunter's Boots",
+      "Chains",
+      "Chains"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740886+00:00"
+  },
+  {
+    "run_id": "d9598e37-f639-48c5-8f9e-38ec958765b5",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Instant Noodles",
+      "Spice Rack",
+      "Instant Noodles",
+      "Solar Farm",
+      "Black Pepper",
+      "Hot Sauce",
+      "Caviar"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740910+00:00"
+  },
+  {
+    "run_id": "f7eee70b-fb56-462d-9dad-673036f165c2",
+    "player": "akyria",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Goop Flail",
+      "Smelling Salts",
+      "Rainbow Potion",
+      "Sword Cane",
+      "Venomous Dose",
+      "Viper Cane"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740933+00:00"
+  },
+  {
+    "run_id": "eaa76e0e-e758-4cfc-a460-18b4636844cd",
+    "player": "debussy",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Pyrocarbon",
+      "RED F1R3FLY",
+      "Cool LEDs",
+      "Nitro",
+      "Ignition Core",
+      "Cauldron",
+      "Cool LEDs"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740956+00:00"
+  },
+  {
+    "run_id": "8cfc743b-7054-402a-b550-64b10624177e",
+    "player": "qingwood",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Lighter",
+      "Coral",
+      "Yeti Crab",
+      "Weather Glass",
+      "Diving Helmet",
+      "Slushee",
+      "Dive Weights",
+      "Zoarcid"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.740981+00:00"
+  },
+  {
+    "run_id": "e9c3202a-2e51-486b-a2aa-536babe3a44e",
+    "player": "BaoJv",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Potion Distillery",
+      "Soul of the District",
+      "Flying Potion",
+      "Healing Draught",
+      "Strength Potion",
+      "Atmospheric Sampler"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.741039+00:00"
+  },
+  {
+    "run_id": "9ec9607a-c4e3-480a-8576-30c44bcac214",
+    "player": "debussy",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Magic Carpet",
+      "Kusarigama",
+      "Gatling Gun",
+      "Metronome",
+      "The Core",
+      "Cool LEDs",
+      "Beta Ray"
+    ],
+    "fetched_at": "2026-03-15T07:50:37.741064+00:00"
+  },
+  {
+    "run_id": "8cfc468e-0b26-4a25-b5a1-b6fb5c814549",
+    "player": "Asar",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "Messenger Sparrow",
+      "Bear Mask",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556079+00:00"
+  },
+  {
+    "run_id": "2948fe7a-d8e1-45cf-bb44-be97cb750391",
+    "player": "ruozeng1562",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Dog",
+      "Jetpack",
+      "Old Saltclaw",
+      "Hunting Hawk",
+      "Karst",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556134+00:00"
+  },
+  {
+    "run_id": "02fcdf7e-10cd-42fa-90c9-adc8aab02331",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Serving Platter",
+      "Lighter",
+      "Spatula",
+      "Burrito",
+      "Spice Rack",
+      "Instant Noodles",
+      "Scorchpepper"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556168+00:00"
+  },
+  {
+    "run_id": "7a849720-6b1e-47db-a660-fd8c5054dca3",
+    "player": "johnnybro1",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Karst",
+      "Firefly Lantern",
+      "Firefly Lantern",
+      "Tranquilizer Dart",
+      "Black Mamba",
+      "Meat",
+      "Dryad"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556196+00:00"
+  },
+  {
+    "run_id": "af6b874d-6533-4115-b6d4-e59e0990cae7",
+    "player": "Dice21",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Seashadow",
+      "Dive Weights",
+      "Nesting Doll",
+      "Diving Helmet",
+      "Combat Core",
+      "Targeting Drone"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556224+00:00"
+  },
+  {
+    "run_id": "01ca19ec-d12b-440b-bfaf-9701692204bf",
+    "player": "MegaCharizard",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Moon Orb",
+      "Piranha",
+      "Zoarcid",
+      "Dive Weights",
+      "Jellyfish",
+      "Piranha",
+      "Piranha",
+      "Narwhal",
+      "Sharkray"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556277+00:00"
+  },
+  {
+    "run_id": "723a25fc-7a63-4060-8b2a-6a07712dce12",
+    "player": "Eywon",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Jerky",
+      "Hunting Hawk",
+      "Bear Claws",
+      "Darkstone Engine",
+      "Outlands Terror"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556320+00:00"
+  },
+  {
+    "run_id": "c67f356c-0b17-4cd4-bde1-378d7ec860ac",
+    "player": "marvk",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Narwhal",
+      "Narwhal",
+      "Piranha",
+      "Hologram Projector",
+      "Piranha",
+      "Duct Tape",
+      "Piranha",
+      "Tortuga"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556344+00:00"
+  },
+  {
+    "run_id": "0111db04-10ef-4b9d-955e-38a4d724a756",
+    "player": "almaraya",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Burn Scar",
+      "Snow Wisp",
+      "Bat",
+      "Firefly Lantern",
+      "Dryad",
+      "Signal Fire",
+      "Tinderbox"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556387+00:00"
+  },
+  {
+    "run_id": "1387182a-a462-4e01-8cfd-23f691512bd1",
+    "player": "jayct8",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Cog",
+      "Oblivion Cannon",
+      "Battery",
+      "Metronome",
+      "Nitro",
+      "Capacitor",
+      "Unstable Grav Well"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556416+00:00"
+  },
+  {
+    "run_id": "ab8a6072-e3ae-447b-99ff-efcd7435a778",
+    "player": "qifeiovo",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Runic Claymore",
+      "Icicle",
+      "Trail Markers",
+      "Trail Markers",
+      "Hunter's Journal",
+      "Palanquin"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556439+00:00"
+  },
+  {
+    "run_id": "0968bfe9-f7b1-4d14-9915-9044a5a1fed5",
+    "player": "(Anonymous)",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Poppy Field",
+      "Floor Spike",
+      "Floor Spike",
+      "Spider Mace",
+      "Fang",
+      "Spider Mace",
+      "Infused Bracers"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556486+00:00"
+  },
+  {
+    "run_id": "5b4f9233-d3af-4adc-b3ad-1c9563f21c36",
+    "player": "Noxar",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Pizza Cutter",
+      "Hot Sauce",
+      "Freezer",
+      "Pasta",
+      "Blender",
+      "Black Pepper",
+      "Carving Fork"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556509+00:00"
+  },
+  {
+    "run_id": "42bc7fcf-3d52-4caf-8472-3104b3c7bf5d",
+    "player": "Pyssck",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Wild Bear",
+      "Snowshoes",
+      "Honey Badger",
+      "Snow Wisp",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556531+00:00"
+  },
+  {
+    "run_id": "25a2235d-ffbe-4a3c-b722-23c47b7e48c1",
+    "player": "johnnybro1",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Firefly Lantern",
+      "Ni Kola",
+      "Firefly Lantern",
+      "Trail Markers",
+      "Dragon Heart",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-15T10:52:44.556576+00:00"
+  },
+  {
+    "run_id": "f09592b2-e940-44d6-9601-50beca771610",
+    "player": "AzureZiP",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Terry Dactyl",
+      "Launcher Core",
+      "Thrusters",
+      "Isochoric Freezer",
+      "Levitation Pad"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777650+00:00"
+  },
+  {
+    "run_id": "8e18bfbd-1f5d-412b-9c50-d167d5ba93d6",
+    "player": "akyria",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Vial Launcher",
+      "Noxious Potion",
+      "Runic Potion",
+      "Energy Potion",
+      "Rainbow Potion",
+      "Shrinking Potion",
+      "Flying Potion",
+      "Recycling Bin"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777711+00:00"
+  },
+  {
+    "run_id": "03061f5d-2706-4e1e-b2c2-7dcddc734534",
+    "player": "pipotropical",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Dishwasher",
+      "Lion Cane",
+      "Fort",
+      "Belt"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777737+00:00"
+  },
+  {
+    "run_id": "8e22b648-f58e-4c40-91d3-d7cc9e32447b",
+    "player": "Yui_Kv",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Clamera",
+      "Anchor",
+      "Diving Helmet",
+      "Hover Tech",
+      "Dive Weights",
+      "Pearl",
+      "Icicle"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777783+00:00"
+  },
+  {
+    "run_id": "5f441532-5356-4d74-908d-baf86013f01b",
+    "player": "Qiraj",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Tree Club",
+      "SMG",
+      "Waterskin",
+      "Flare",
+      "Messenger Sparrow",
+      "Bandoleer"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777817+00:00"
+  },
+  {
+    "run_id": "878967e5-738e-4e5e-91ee-f6a5f4c38447",
+    "player": "filbert",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Giant Sling",
+      "Hunter's Boots",
+      "Fogshroom",
+      "Night Vision",
+      "Messenger Sparrow",
+      "Warpaint"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777873+00:00"
+  },
+  {
+    "run_id": "820d6d32-7eb7-4e77-bbe2-1affa5f4d9ff",
+    "player": "Ekoo",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Burn Scar",
+      "YLW M4NT1S",
+      "Signal Fire",
+      "Zoarcid",
+      "Snow Wisp",
+      "Flare",
+      "Tinderbox",
+      "Hunter's Journal"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777901+00:00"
+  },
+  {
+    "run_id": "887c088c-1b3b-480d-9d1f-5f91859ac0ba",
+    "player": "(Anonymous)",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Poppy Field",
+      "Wrist Crossbow",
+      "Friendly Doll",
+      "Spider Mace",
+      "Floor Spike",
+      "Floor Spike",
+      "Basilisk Fang",
+      "Silver Stake"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777929+00:00"
+  },
+  {
+    "run_id": "f4db21bf-9704-4a9a-a2c5-ad8a802dcf9a",
+    "player": "Treasures",
+    "hero": "Vanessa",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Shipwreck",
+      "Tortuga",
+      "Narwhal",
+      "Piranha",
+      "Piranha",
+      "Piranha"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777951+00:00"
+  },
+  {
+    "run_id": "1d575015-064e-4bac-bc3f-1ed06cba5bf6",
+    "player": "gocks",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Chaff",
+      "Monitor Lizard",
+      "Metronome",
+      "Pyrocarbon",
+      "Fiber Optics",
+      "Robotic Factory"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.777978+00:00"
+  },
+  {
+    "run_id": "d225b9f9-bbdc-4558-87d9-75a1908f40d7",
+    "player": "(Anonymous)",
+    "hero": "Duli",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Micro Mach",
+      "Dino Saddle",
+      "Race Carl",
+      "Venomander",
+      "Energy Potion",
+      "Dooltron"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778001+00:00"
+  },
+  {
+    "run_id": "9cbe1558-b5b1-4786-9969-6049521f45a2",
+    "player": "LightSoul",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Oblivion Vortex",
+      "Repair Drone",
+      "Tractor Beam",
+      "Boom Boom Bot",
+      "Fire Bomb",
+      "Goggles",
+      "LavaRoller"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778026+00:00"
+  },
+  {
+    "run_id": "e536999b-a02f-4de5-9bf1-d16897cacbc0",
+    "player": "LightSoul",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Tugboat",
+      "Sirens",
+      "Observatory",
+      "Oblivion Cannon",
+      "Flycycle"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778047+00:00"
+  },
+  {
+    "run_id": "39fafbc4-e8f9-426d-a7e6-024f8d68dfee",
+    "player": "qifeiovo",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Potion Distillery",
+      "Energy Potion",
+      "Flying Potion",
+      "Soul Ring",
+      "Vitality Potion",
+      "Invulnerability Potion",
+      "Strength Potion",
+      "Invulnerability Potion"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778093+00:00"
+  },
+  {
+    "run_id": "c020cda6-0999-4e9a-b364-5d9ac5932273",
+    "player": "LightSoul",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Multitool",
+      "Lowroller",
+      "Goggles",
+      "LavaRoller",
+      "Rivet Gun",
+      "Repair Drone",
+      "Ice Bomb",
+      "Icicle"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778119+00:00"
+  },
+  {
+    "run_id": "ba71daa8-9f93-4707-930d-40ba1163e2a4",
+    "player": "LightSoul",
+    "hero": "Stelle",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Goggles",
+      "Pillbuggy",
+      "Thrusters",
+      "Headset",
+      "Sirens",
+      "Radar Dome"
+    ],
+    "fetched_at": "2026-03-15T15:54:47.778139+00:00"
+  },
+  {
+    "run_id": "68e63722-bd55-49be-a409-0ae87135fdb0",
+    "player": "eNigMa",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Outlands Terror",
+      "Hunting Hawk",
+      "Flying Squirrel",
+      "Tree Club",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323027+00:00"
+  },
+  {
+    "run_id": "07141f4e-f563-4972-ace6-2a536baeeb75",
+    "player": "dagorek",
+    "hero": "Mak",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Library",
+      "Atmospheric Sampler",
+      "Flying Potion",
+      "Boiling Flask",
+      "Eternal Torch"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323073+00:00"
+  },
+  {
+    "run_id": "0610a938-b71d-4616-abf6-80ff437e3947",
+    "player": "TheStickMan",
+    "hero": "Jules",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Black Pepper",
+      "Hot Sauce",
+      "Freezer",
+      "Slushee",
+      "Ice Cubes",
+      "Blender",
+      "Ice Cubes"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323151+00:00"
+  },
+  {
+    "run_id": "5f87c10b-e347-491d-a912-338c57764ad7",
+    "player": "(Anonymous)",
+    "hero": "Jules",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Poke",
+      "Honeycomb",
+      "Black Pepper",
+      "Pizza Cutter",
+      "Azakan Stew",
+      "Banu Leaves",
+      "Caviar",
+      "Sorbet",
+      "Zarlic"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323204+00:00"
+  },
+  {
+    "run_id": "811f3f3e-e10c-46c4-845d-15129e07884e",
+    "player": "Andrebert",
+    "hero": "Vanessa",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Hunter's Journal",
+      "Korxena Crest",
+      "Fang",
+      "Beast Tooth",
+      "Bat",
+      "Zoarcid",
+      "Narwhal",
+      "Butterfly Swords",
+      "Piranha",
+      "Pearl"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323256+00:00"
+  },
+  {
+    "run_id": "b73c7a6f-a16e-4965-b0b9-40bb5d09e89e",
+    "player": "Waylin",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Fogshroom",
+      "Giant Sling",
+      "Worry Wart",
+      "Chains",
+      "Fairy Circle"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323278+00:00"
+  },
+  {
+    "run_id": "4bd34633-d6ee-43a7-b4fa-f33cc6d6c135",
+    "player": "Noxar",
+    "hero": "Duli",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Integrated HUD",
+      "Power Drill",
+      "Fiber Optics",
+      "Pylon",
+      "Plasma Grenade",
+      "BLK SP1D3R",
+      "Nitro"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323326+00:00"
+  },
+  {
+    "run_id": "762941da-f535-49ed-a1aa-2f0ca2816393",
+    "player": "Ikarus",
+    "hero": "Jules",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Clamera",
+      "Banu Leaves",
+      "Imu",
+      "Hot Box",
+      "Black Pepper",
+      "Weather Machine"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323348+00:00"
+  },
+  {
+    "run_id": "36f47184-7679-43af-a423-cb2aed7e28ba",
+    "player": "novemx",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Flying Squirrel",
+      "Spear",
+      "Bear Trap",
+      "Hunting Hawk",
+      "Propeller Hat",
+      "Runed Bracelet",
+      "Messenger Sparrow"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323373+00:00"
+  },
+  {
+    "run_id": "47286b4c-10c7-4483-967f-dc9317b0aa89",
+    "player": "Bunzo",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Chains",
+      "Hunter's Boots",
+      "Boa Constrictor",
+      "Wildroot Amulet",
+      "Bat",
+      "Karst"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323398+00:00"
+  },
+  {
+    "run_id": "fe24635c-0fff-4d74-8129-ab171a0e3692",
+    "player": "AngryBunnyNL",
+    "hero": "Karnok",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Hunter's Journal",
+      "Caustic Solvent",
+      "Worry Wart",
+      "Drowsdrop",
+      "Black Mamba",
+      "Black Mamba",
+      "Palanquin"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323422+00:00"
+  },
+  {
+    "run_id": "9eaed823-0b2f-4957-b765-1d6718e936e3",
+    "player": "spenczarr",
+    "hero": "Karnok",
+    "victory": "Perfect",
+    "wins": 10,
+    "items": [
+      "Burn Scar",
+      "Tinderbox",
+      "Torch",
+      "Firefly Lantern",
+      "Beast Call",
+      "Hunter's Sled",
+      "Caustic Solvent",
+      "Wildroot Amulet"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323447+00:00"
+  },
+  {
+    "run_id": "57d798ac-af01-4686-8ec7-23c8d5651d37",
+    "player": "SSSilva",
+    "hero": "Pygmalion",
+    "victory": "Gold",
+    "wins": 10,
+    "items": [
+      "Belt",
+      "Cash Cannon",
+      "Dog",
+      "Bat",
+      "Double Whammy"
+    ],
+    "fetched_at": "2026-03-16T22:07:32.323488+00:00"
   }
 ]
